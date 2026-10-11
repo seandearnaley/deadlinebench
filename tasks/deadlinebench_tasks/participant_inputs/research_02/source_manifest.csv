@@ -1,0 +1,10 @@
+source_id,file,description,synthetic
+S01,sources/S01_decision_charter.md,"Priorities, gates, assumptions and limits",true
+S02,sources/S02_intervention_proposals.md,Quotes and supplier claims,true
+S03,sources/S03_mis_sort_counts.csv,"Baseline, initial and follow-up counts with row IDs",true
+S03,sources/S03_measurement_and_assignment.md,Metric definition and observational limitations,true
+S04,sources/S04_peak_flow.csv,Peak-flow observations with row IDs,true
+S04,sources/S04_peak_flow_notes.md,Flow definitions and operator concerns,true
+S05,sources/S05_cost_and_capacity_estimates.md,"Costs, hours, contingencies and test estimate",true
+S06,sources/S06_follow_up_and_staff_memo.md,Durability warnings and qualitative context,true
+S07,sources/S07_peak_forecast.md,Demand forecast and timing constraints,true

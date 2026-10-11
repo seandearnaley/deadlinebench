@@ -1,0 +1,4 @@
+synthetic,source_id,row_id,arm,observed_peak_shifts,overall_median_parcels_per_paid_packing_hour,oversize_p95_cycle_minutes,confirmed_safety_incidents
+true,S04,B-FLOW,baseline,6,192,8.5,0
+true,S04,G-FLOW,SignalGate,6,184,11.0,0
+true,S04,R-FLOW,RouteCraft,6,196,9.2,0

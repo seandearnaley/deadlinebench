@@ -1,0 +1,25 @@
+{
+  "cutoff_seconds": 180,
+  "observed_elapsed_seconds": 180.0200111009981,
+  "utc": "2026-10-11T05:10:05.435562+00:00",
+  "files": [
+    {
+      "file": "analyze.py",
+      "bytes": 4165,
+      "sha256": "a3864d46e05aa686075f5f9afc1632c2de841b099cb663859360068ce39fdbbf",
+      "stable_during_read": true
+    },
+    {
+      "file": "metrics.json",
+      "bytes": 5057,
+      "sha256": "b6d608ee0c99fe0c6c7c04d88debf2261b6937642fbea865141b993f5117c1c5",
+      "stable_during_read": true
+    },
+    {
+      "file": "report.md",
+      "bytes": 4395,
+      "sha256": "50f607e25f39d9736295131e0e95e5c003f65a4585022496b4e5e776af31e578",
+      "stable_during_read": true
+    }
+  ]
+}

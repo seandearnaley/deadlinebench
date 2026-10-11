@@ -1,0 +1,172 @@
+{
+  "name": "DeadlineBench offline screening tasks",
+  "version": "1.0",
+  "frozen_at_utc": "2026-10-11T05:14:30.933633+00:00",
+  "task_count": 6,
+  "snapshot_seconds": [
+    90,
+    180,
+    300
+  ],
+  "weights": {
+    "mandatory": [
+      30,
+      25,
+      15
+    ],
+    "optional": [
+      10,
+      10,
+      10
+    ]
+  },
+  "evaluator_python_source_lines": 175,
+  "tasks": [
+    {
+      "id": "research_01",
+      "kind": "research_synthesis",
+      "title": "Choose a support-search pilot",
+      "synthetic": true,
+      "participant_directory": "participant_inputs/research_01",
+      "prompt": "participant_inputs/research_01/prompt.txt",
+      "required_output_files": [
+        "output/report.md"
+      ],
+      "evaluator_rubric": "evaluator_only/research_01/rubric.md",
+      "checker": null
+    },
+    {
+      "id": "research_02",
+      "kind": "research_synthesis",
+      "title": "Choose a parcel mis-sort intervention",
+      "synthetic": true,
+      "participant_directory": "participant_inputs/research_02",
+      "prompt": "participant_inputs/research_02/prompt.txt",
+      "required_output_files": [
+        "output/report.md"
+      ],
+      "evaluator_rubric": "evaluator_only/research_02/rubric.md",
+      "checker": null
+    },
+    {
+      "id": "data_01",
+      "kind": "data_report",
+      "title": "Prioritize support coverage",
+      "synthetic": true,
+      "participant_directory": "participant_inputs/data_01",
+      "prompt": "participant_inputs/data_01/PROMPT.txt",
+      "required_output_files": [
+        "output/report.md",
+        "output/metrics.json"
+      ],
+      "evaluator_rubric": "evaluator_only/data_01/RUBRIC_LOCKED.md",
+      "checker": "evaluator_only/data_01/checks.py"
+    },
+    {
+      "id": "data_02",
+      "kind": "data_report",
+      "title": "Review promotional contribution",
+      "synthetic": true,
+      "participant_directory": "participant_inputs/data_02",
+      "prompt": "participant_inputs/data_02/PROMPT.txt",
+      "required_output_files": [
+        "output/report.md",
+        "output/metrics.json"
+      ],
+      "evaluator_rubric": "evaluator_only/data_02/RUBRIC_LOCKED.md",
+      "checker": "evaluator_only/data_02/checks.py"
+    },
+    {
+      "id": "code_01",
+      "kind": "tiny_code_repair",
+      "title": "Repair daily service windows",
+      "synthetic": true,
+      "participant_directory": "participant_inputs/code_01",
+      "prompt": "participant_inputs/code_01/TASK.md",
+      "required_output_files": [
+        "output/service_windows.py"
+      ],
+      "evaluator_rubric": "evaluator_only/code_01/LOCKED_RUBRIC.md",
+      "checker": "evaluator_only/code_01/checks.py"
+    },
+    {
+      "id": "code_02",
+      "kind": "tiny_code_repair",
+      "title": "Repair warehouse stock reconciliation",
+      "synthetic": true,
+      "participant_directory": "participant_inputs/code_02",
+      "prompt": "participant_inputs/code_02/TASK.md",
+      "required_output_files": [
+        "output/stock_csv.py"
+      ],
+      "evaluator_rubric": "evaluator_only/code_02/LOCKED_RUBRIC.md",
+      "checker": "evaluator_only/code_02/checks.py"
+    }
+  ],
+  "sha256": {
+    "README.md": "b1fad022338f44bdf44c7f81ad13912bd0b727a06ff7147d7b78cbc228d3dd4d",
+    "evaluator_only/code_01/LOCKED_RUBRIC.md": "978a6fec6560d45ea396dff9dd13f9336bbb05e0ed5504dd816489b633ee74d0",
+    "evaluator_only/code_01/VALIDATION.json": "77663faa79c2ca6dc6dab3caa32e83905207a1b6f6442eba3c1198437905a193",
+    "evaluator_only/code_01/checks.py": "f28b59f6846ecb92bcf509bfdbb1518fc71ec40d5f7ab47a1b4689e478676de5",
+    "evaluator_only/code_02/LOCKED_RUBRIC.md": "9eb4137ae93b9ae1ac123ad499305d95d5c7dc6c9c0bf9b8b7d35d97ad68dfba",
+    "evaluator_only/code_02/VALIDATION.json": "77663faa79c2ca6dc6dab3caa32e83905207a1b6f6442eba3c1198437905a193",
+    "evaluator_only/code_02/checks.py": "9944d2af666856ae0eba8af4830c56cbcdb85a565a121cfb3c15d61f63267850",
+    "evaluator_only/data_01/RUBRIC_LOCKED.md": "2755967478a9935d554f9c55dc68590e982ba721cc67d527fcf3a889863ded8a",
+    "evaluator_only/data_01/USABLE_CORE_LOCKED.txt": "ad10cd462af2cb853262b857eaa649e4fd671d1097f244efc92aec446aac9651",
+    "evaluator_only/data_01/answer_key.json": "348e7ae3e3c3e7bb68f58dcc9e167e1f5d9bf09c440914443b5d4fd72cce609a",
+    "evaluator_only/data_01/checks.py": "52c8340a1d0230186ccf8f782169169a502cf03c6946c51d0a26e670216f6064",
+    "evaluator_only/data_02/RUBRIC_LOCKED.md": "0c997da0166401f4ad9e100ae348440c7fe876e983846e926dc735fe046d57a6",
+    "evaluator_only/data_02/answer_key.json": "e88bdef7a59969b6367dd8fc1217054e0a9db874a76d2fc438323d58508008fa",
+    "evaluator_only/data_02/checks.py": "beb361a9fc8e506411a1b854751ae9aa128c95c912a92f8cf81a8be539c40012",
+    "evaluator_only/data_validation.json": "d45e50dbec29c816b25572daa2494fe52f0dc2d01a72c053e460f5f84f37c5e3",
+    "evaluator_only/evaluate.py": "7185badc2660514bb32e5c6d2d781d15ec605d08704595d41d195488eea10ada",
+    "evaluator_only/research_01/answer_key.md": "dc835d2be139a5f60c692a76c7918136751b38cd09fe9acc19cc367f46b992d6",
+    "evaluator_only/research_01/rubric.md": "0ce7f226adeca45904c601628d7bdc8df9da72718474b0f42abed17af4e0844c",
+    "evaluator_only/research_01/rubric_lock.json": "141fdf2fab6292098babbc4a899abb943eacc9abeaa2a686b57f085af6bd9f23",
+    "evaluator_only/research_01/snapshot_score_template.csv": "6774d324bca9368cb115cd8ca46d1e6fe8c6d4ab831d4f2c040531baab23abc8",
+    "evaluator_only/research_01/validation_record.md": "3b5370e7f8c2fc2824644f1415a0a1178bb588fe45d3e2e233f6eae564e4d96a",
+    "evaluator_only/research_02/answer_key.md": "ff482c255beb1ebb1b3eb83637adf66477c9f00a295f691b527b6eca5c321dc3",
+    "evaluator_only/research_02/rubric.md": "2a736c33cb8da303bfb35818a26d8a3421ba7a7504c82e9cb6a8daab3f5d50bf",
+    "evaluator_only/research_02/rubric_lock.json": "28ac3758a7a19ce06d244b6037781a90ef4250cf04445d8b255322c1398d56ba",
+    "evaluator_only/research_02/snapshot_score_template.csv": "6774d324bca9368cb115cd8ca46d1e6fe8c6d4ab831d4f2c040531baab23abc8",
+    "evaluator_only/research_02/validation_record.md": "f34d51c3b5870c36e2e4bd5a558c3a7b0a6fdcf25e6175dcb4ba4a42f0674c2c",
+    "participant_inputs/code_01/TASK.md": "eaa2d9364058e3fadd2468a1098cec18d7438aa8aa434a4f133fffa348fd5d2c",
+    "participant_inputs/code_01/service_windows.py": "789fc3aaf4526e3ac625c667c578710fcd966f81a072fd707ea08e47e0a9e22d",
+    "participant_inputs/code_01/test_visible.py": "f3b6e78010ca837f8e038ddd15189bea511f1c4f5c270b613e84b84637caffa2",
+    "participant_inputs/code_02/TASK.md": "605848e95543b067c2b0b07a248d54514955cffdb5022130b7bef7ab12d872aa",
+    "participant_inputs/code_02/stock_csv.py": "fa59f3c805fe2c78a329da44b5d4ea2c466fc096c7832e35f0d729905eae6029",
+    "participant_inputs/code_02/test_visible.py": "99ced9b01b25a38b1abc9d96fafaa5809560a63f05fe784d00898336504d36db",
+    "participant_inputs/data_01/DATA_DICTIONARY.txt": "380e3333425fb1020ddab895b32ab81b42024f9a98a645b57bf533374076bcd7",
+    "participant_inputs/data_01/PROMPT.txt": "0f92b86cc61bd4af5f8d554778f6c936329d28ee38f201f7a0613d0b1c99309a",
+    "participant_inputs/data_01/staffing_notes.txt": "bd8ebcbf9b6f4841b6c00c9cb58cbfbd5f140f187cf82eb8050084a3d07162df",
+    "participant_inputs/data_01/ticket_export.csv": "597fede9f27dea5f967515f22fe8b202309287fc780cc89ad62a8ccaedc5ae9f",
+    "participant_inputs/data_02/DATA_DICTIONARY.txt": "938ba95c5380c4d9578bff09112636d420ab5c9551345765163241fc02a91615",
+    "participant_inputs/data_02/PROMPT.txt": "e1706005781559b0bb95c4aa17d761ea136a04d6098f551c5d52cfba5b7cb7d0",
+    "participant_inputs/data_02/marketing_spend.csv": "6c11034adc862d6ff9cb5858db21814a5336f1df62865789edd24c7255799f88",
+    "participant_inputs/data_02/orders.csv": "6aceb18445f5eafe0e919688e2b82beed58c0bf02ae2b115ce6081edc26b232c",
+    "participant_inputs/data_02/planning_notes.txt": "5eaff2b0f73ca159391e960bc28797cf30898dbddaaefc86695b7b1c7c314e12",
+    "participant_inputs/data_02/refunds.csv": "d32266e91c19d190f4a0950b1ebd36f2f3dd493ede096ba647e38470168bca6d",
+    "participant_inputs/research_01/prompt.txt": "78c13b57c3d4a1dabf105c47a0b8c350d6a04eff3b85ecafd393f778063c0854",
+    "participant_inputs/research_01/source_manifest.csv": "bfef47add2527992e528854e1392b2f34aaa00af5c71ae953f911fdbce81e262",
+    "participant_inputs/research_01/sources/S01_decision_charter.md": "dcad9448dd7123b2d4164e59c7d33f62557330abc540e44aee95bc65fe8f3168",
+    "participant_inputs/research_01/sources/S02_supplier_proposals.md": "043052162cc136e1c3945db7bfb6a666840217fed0dca458831d4f54b90304ed",
+    "participant_inputs/research_01/sources/S03_handling_trial.csv": "a43cd3df9d586ad5b59c447c0c8cd6aa9065adb690839dd825cf4050b91c7ba3",
+    "participant_inputs/research_01/sources/S03_trial_method.md": "98bc1d8f69631537f34449b75dd29bb9ac644f834480e0455e4d3823079ef252",
+    "participant_inputs/research_01/sources/S04_answer_audit.csv": "1e057de8e5b28f460a4fd08f549e1a2965e8f0f4797d0e7ef95a79191e2332cb",
+    "participant_inputs/research_01/sources/S04_audit_notes.md": "5a6d193a43b0429770f61c5c53543ca3f6716cefdac2e14fa3abd8604484a272",
+    "participant_inputs/research_01/sources/S05_implementation_estimates.md": "afda6a96f3844a5d645751e1887b2ea5c08109d269d6905955f0d71bb6275f86",
+    "participant_inputs/research_01/sources/S06_agent_interviews.md": "12241d54914047263e731dfb1680a9076d0a8c09614848041590eed3f8c85edf",
+    "participant_inputs/research_01/sources/S07_demand_and_policy_note.md": "6176b850642655c692d935f90cd811c56d8800893d9b68b2b2ec84b98aa4363e",
+    "participant_inputs/research_02/prompt.txt": "5c134729880686d373908462cb9e35f33efe70350878697f970f532906f07f08",
+    "participant_inputs/research_02/source_manifest.csv": "f0860a11992d21411c3f9c9880e2f152190d574b00599c9ec15436d3a90ffc8e",
+    "participant_inputs/research_02/sources/S01_decision_charter.md": "02bd6fcdef8daab41eaa409f9dd20ab1ab4b551733020e3747e65c8fe9217e36",
+    "participant_inputs/research_02/sources/S02_intervention_proposals.md": "e90c6d69e337b1430badd9903cdecb937f92d95c928c03256c69332b02851ce3",
+    "participant_inputs/research_02/sources/S03_measurement_and_assignment.md": "f3ced6a8ba4c3f1bf4725878bd2aa47bb9de864cd257b6ab7f165ae3649781a5",
+    "participant_inputs/research_02/sources/S03_mis_sort_counts.csv": "5eb8ac11130b7d74f8d402c3f7db7de6a53f0597ef332b8cae8c6607169e947b",
+    "participant_inputs/research_02/sources/S04_peak_flow.csv": "b92ee1d5d6ee6c18f7af06f543d2d22326c3e6845e87dc44273f96712f411b01",
+    "participant_inputs/research_02/sources/S04_peak_flow_notes.md": "5b794dcd7274104984f2c7dbe6080ffc0c1208c61fe5eb7a020d8891993d13a6",
+    "participant_inputs/research_02/sources/S05_cost_and_capacity_estimates.md": "c2a8be3659ff815b5047e41aec384e05cc2c772cdaa2c89deb2d04233969ea9a",
+    "participant_inputs/research_02/sources/S06_follow_up_and_staff_memo.md": "6d8b1abc518b4ad002527e7f2d51a3291f9782c724ea2747247eff26b4f7c22d",
+    "participant_inputs/research_02/sources/S07_peak_forecast.md": "d959ab0a25a34d118fe52dfbc1e80b3fcbc8e650ec8e2438d417fa3a0f751864"
+  }
+}

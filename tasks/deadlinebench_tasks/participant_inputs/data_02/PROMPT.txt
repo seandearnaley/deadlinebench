@@ -1,0 +1,17 @@
+DeadlineBench data_02: Review promotional contribution
+
+All data, organizations and people here are synthetic. Work offline from these files; Python standard library only if coding. Do not install packages or modify inputs. Your deadline may be 90, 180 or 300 seconds. Save partial useful output early: only artifacts in output/ at the cutoff will be graded.
+
+Cobalt Pantry needs a May channel-performance brief as of June 15, 2026 00:00 UTC, before assigning a $2,000 small June marketing trial. Use orders.csv, refunds.csv, marketing_spend.csv, DATA_DICTIONARY.txt and planning_notes.txt. Write at most 700 words in output/report.md, with computed results in output/metrics.json.
+
+Mandatory requirements (70 points):
+1. Compute qualifying shipped-order count, gross charged sales, qualifying refunds, net sales, product-plus-shipping costs, May marketing spend, and contribution after those costs/spend. Explain what contribution includes and excludes. (30)
+2. Compare all four channels on contribution and refunded-order rate. Allocate exactly $2,000 to at least two channels within the supplied caps, explaining the observed performance and a material trade-off. Any defensible compliant allocation can earn full credit. (25)
+3. State seven audit counts: raw orders, non-May orders, May cancelled orders, raw refund rows, duplicate refund rows removed, qualifying refund events and refunded qualifying order count. Explain inclusion/deduplication and material attribution or maturity limitations. (15)
+
+Useful optional items (30 points):
+1. Show shipped-order counts and net sales for May 1-7, 8-14, 15-21 and 22-31, with a cautious interpretation of refund maturity or period length. (10)
+2. Stress-test an additional hypothetical refund reserve equal to 5% of gross charged sales, without changing costs/spend: recompute each channel's contribution and the overall contribution. Explain how this affects your confidence in the allocation. This is a scenario, not a forecast. (10)
+3. Include a standard-library script that recreates your submitted mandatory metrics from the provided files, plus a one-line run instruction. (10)
+
+metrics.json: overall has shipped_orders, gross_sales_usd, refunds_usd, net_sales_usd, product_shipping_cost_usd, marketing_spend_usd, contribution_usd. by_channel has Search, Social, Email, Partner objects with contribution_usd and refund_rate_pct (extra metrics allowed). audit has raw_orders, non_may_orders, may_cancelled, raw_refund_rows, duplicate_refund_rows, qualifying_refund_events, refunded_order_count. Optional by_week has May 1-7, May 8-14, May 15-21, May 22-31 objects with shipped_orders and net_sales_usd. Optional stress_by_channel maps the four channels directly to stressed contribution numbers, and stress_total_usd is the stressed total. USD figures to two decimals; rates in percent to two decimals; counts integers. Correct readable report content still earns its applicable credit if the JSON is unfinished.

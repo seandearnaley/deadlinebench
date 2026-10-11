@@ -1,0 +1,105 @@
+{
+  "overall": {
+    "tickets": 420,
+    "breached": 206,
+    "breach_rate_pct": 49.05,
+    "median_first_response_hours": 4.23,
+    "unanswered": 58,
+    "unresolved": 172
+  },
+  "by_queue": {
+    "Billing": {
+      "tickets": 143,
+      "breached": 59,
+      "breach_rate_pct": 41.26,
+      "median_first_response_hours": 3.96,
+      "unanswered": 11,
+      "unresolved": 55
+    },
+    "Technical": {
+      "tickets": 199,
+      "breached": 142,
+      "breach_rate_pct": 71.36,
+      "median_first_response_hours": 6.95,
+      "unanswered": 42,
+      "unresolved": 87
+    },
+    "Account": {
+      "tickets": 78,
+      "breached": 5,
+      "breach_rate_pct": 6.41,
+      "median_first_response_hours": 2.63,
+      "unanswered": 5,
+      "unresolved": 30
+    }
+  },
+  "audit": {
+    "raw_rows": 670,
+    "rows_at_or_after_cutoff": 11,
+    "deduplicated_ids": 576,
+    "test_ids_excluded": 16,
+    "march_ids_excluded": 140,
+    "duplicate_rows_removed": 83,
+    "april_cohort_ids": 420
+  },
+  "weekly": {
+    "Apr 1-7": {
+      "tickets": 83,
+      "breached": 48,
+      "breach_rate_pct": 57.83,
+      "median_first_response_hours": 4.31,
+      "unanswered": 11,
+      "unresolved": 28
+    },
+    "Apr 8-14": {
+      "tickets": 115,
+      "breached": 51,
+      "breach_rate_pct": 44.35,
+      "median_first_response_hours": 3.87,
+      "unanswered": 15,
+      "unresolved": 41
+    },
+    "Apr 15-21": {
+      "tickets": 90,
+      "breached": 46,
+      "breach_rate_pct": 51.11,
+      "median_first_response_hours": 3.96,
+      "unanswered": 15,
+      "unresolved": 31
+    },
+    "Apr 22-30": {
+      "tickets": 132,
+      "breached": 61,
+      "breach_rate_pct": 46.21,
+      "median_first_response_hours": 4.82,
+      "unanswered": 17,
+      "unresolved": 72
+    }
+  },
+  "by_segment": {
+    "Enterprise": {
+      "tickets": 85,
+      "breached": 44,
+      "breach_rate_pct": 51.76,
+      "median_first_response_hours": 4.22,
+      "unanswered": 12,
+      "unresolved": 37
+    },
+    "Small business": {
+      "tickets": 158,
+      "breached": 75,
+      "breach_rate_pct": 47.47,
+      "median_first_response_hours": 4.28,
+      "unanswered": 20,
+      "unresolved": 69
+    },
+    "Consumer": {
+      "tickets": 177,
+      "breached": 87,
+      "breach_rate_pct": 49.15,
+      "median_first_response_hours": 4.15,
+      "unanswered": 26,
+      "unresolved": 66
+    }
+  }
+}

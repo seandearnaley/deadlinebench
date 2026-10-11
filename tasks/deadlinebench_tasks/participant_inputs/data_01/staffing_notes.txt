@@ -1,0 +1,11 @@
+SYNTHETIC SOURCE: April 30 support planning notes, Northstar Desk.
+
+Director: We can fund exactly two extra four-hour analyst shifts in the first May week. Each shift must be assigned to one queue; splitting one shift is not possible. A queue can receive both shifts. This is a one-week trial, not a permanent staffing decision.
+
+Technical lead: One specialist can cover either or both extra Technical shifts. Product incident INC-42 drove part of the month's technical load, but the export does not label incident-related tickets. The fix shipped April 24; we cannot assume all technical load disappears.
+
+Billing lead: A generalist can take either extra Billing shift. Month-end invoice disputes may concentrate arrivals near the end of a month. We can provide a short billing checklist, but there is no measured estimate of tickets cleared per extra shift.
+
+Account lead: A generalist can cover Account. Most reset requests use an existing template. Our group worries about open tickets, but open-ticket count alone does not measure first-response failure.
+
+Director: Prioritize first-response risk, make the capacity trade-off explicit, and propose a simple way to check whether the trial helped. Do not invent headcount forecasts, revenue-at-risk estimates, or the number of tickets an extra shift would clear.

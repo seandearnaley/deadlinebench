@@ -1,0 +1,64 @@
+{
+  "buggy_baseline": {
+    "categories": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 0,
+      "O1": 0,
+      "O2": 0,
+      "O3": 0
+    },
+    "total": 0
+  },
+  "full_repair": {
+    "categories": {
+      "M1": 30,
+      "M2": 25,
+      "M3": 15,
+      "O1": 10,
+      "O2": 10,
+      "O3": 10
+    },
+    "total": 100
+  },
+  "mandatory_only": {
+    "categories": {
+      "M1": 30,
+      "M2": 25,
+      "M3": 15,
+      "O1": 0,
+      "O2": 0,
+      "O3": 0
+    },
+    "total": 70
+  },
+  "missing_module": {
+    "categories": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 0,
+      "O1": 0,
+      "O2": 0,
+      "O3": 0
+    },
+    "load_error_type": "FileNotFoundError",
+    "total": 0
+  },
+  "syntax_error": {
+    "categories": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 0,
+      "O1": 0,
+      "O2": 0,
+      "O3": 0
+    },
+    "load_error_type": "SyntaxError",
+    "total": 0
+  },
+  "visible_tests_on_buggy_fixture": {
+    "failed": 1,
+    "passed": 2,
+    "tests": 3
+  }
+}

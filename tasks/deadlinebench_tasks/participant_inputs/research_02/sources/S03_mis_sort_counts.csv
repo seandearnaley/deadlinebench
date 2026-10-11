@@ -1,0 +1,11 @@
+synthetic,source_id,row_id,stage,arm,parcel_type,parcels,confirmed_mis_sorts,window
+true,S03,B-ST,baseline,baseline,standard,100000,100,2026-03-02 to 2026-03-13
+true,S03,B-OV,baseline,baseline,oversize,40000,60,2026-03-02 to 2026-03-13
+true,S03,G-ST,initial_trial,SignalGate,standard,60000,30,2026-04-06 to 2026-04-17
+true,S03,G-OV,initial_trial,SignalGate,oversize,20000,20,2026-04-06 to 2026-04-17
+true,S03,R-ST,initial_trial,RouteCraft,standard,60000,36,2026-04-06 to 2026-04-17
+true,S03,R-OV,initial_trial,RouteCraft,oversize,20000,16,2026-04-06 to 2026-04-17
+true,S03,GF-ST,follow_up,SignalGate,standard,20000,11,2026-05-04 to 2026-05-08
+true,S03,GF-OV,follow_up,SignalGate,oversize,20000,19,2026-05-04 to 2026-05-08
+true,S03,RF-ST,follow_up,RouteCraft,standard,40000,26,2026-05-04 to 2026-05-08
+true,S03,RF-OV,follow_up,RouteCraft,oversize,40000,46,2026-05-04 to 2026-05-08

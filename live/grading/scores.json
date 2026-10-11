@@ -1,0 +1,1895 @@
+{
+  "graded_at_utc": "2026-10-11T05:18:53.133121+00:00",
+  "status": "complete",
+  "method": {
+    "scope": "Seven distinct blinded saved artifact sets across 13 nominated snapshots; only frozen input pack, locked rubric/key/checker, and saved snapshots used as scoring evidence. No later report credit. No model ranking or causal treatment inference.",
+    "rubric_version": "data_01 version 1.0",
+    "code_as_definition_policy": "Correct saved executable formulas count as explicit definition/method evidence under \u201cgrade content wherever saved.\u201d This is applied consistently to all sets; it does not create prose recommendation, caution, interpretation, or run-instruction credit.",
+    "missing_report_policy": "No global missing-report penalty beyond the rubric. Missing report is separately flagged and missing content earns zero only for its sub-item.",
+    "deduplication": "Hashset over artifact filenames and SHA-256 content digests; SNAPSHOT.json metadata excluded. A/C/D identical within label at 90/180/300. No unique artifact set rerun solely for later cutoff.",
+    "reproduction": "Inspected every participant script before execution. Copied supplied input and saved output into disposable /tmp workspaces, removed only copied metrics, reconstructed once per unique hashset. No original snapshot/output writes. No packages installed or network/paid calls.",
+    "actual_reproduction_limits": {
+      "wall_timeout_seconds": 15,
+      "cpu_soft_and_hard_seconds": 5,
+      "address_space_bytes": 268435456,
+      "file_size_bytes": 10485760,
+      "open_file_descriptors": 128,
+      "isolated_python": true,
+      "site_disabled": true,
+      "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+      "packages_installed": false
+    },
+    "run_scope_limitations": "Only supplied-data reconstruction, not adversarial or broader generalization tests. C counts all pre-April production IDs as March; F tests month==3 without year. Both are correct on supplied data, which contains March/April 2026 only; no unrequested robustness penalty. All seven scripts exited 0 and reconstructed the full saved JSON exactly.",
+    "blinding_limitation": "Condition mapping, original-run directories, original-thread files and condition-label files were not opened. One incidental internal live-agent listing exposed generic completed-run summaries without a blinded-label mapping. This weakens strict process blinding; those summaries were not used as grading evidence. No further agent listings were made.",
+    "confidence": "High for direct artifact facts, numeric checks, file presence, and supplied-input reconstruction. Medium-high for E\u2019s weighted/core M1 interpretation because its definitions are saved as executable formulas rather than a brief."
+  },
+  "locked_source_hashes": {
+    "answer_key.json": "348e7ae3e3c3e7bb68f58dcc9e167e1f5d9bf09c440914443b5d4fd72cce609a",
+    "USABLE_CORE_LOCKED.txt": "ad10cd462af2cb853262b857eaa649e4fd671d1097f244efc92aec446aac9651",
+    "checks.py": "52c8340a1d0230186ccf8f782169169a502cf03c6946c51d0a26e670216f6064",
+    "RUBRIC_LOCKED.md": "2755967478a9935d554f9c55dc68590e982ba721cc67d527fcf3a889863ded8a"
+  },
+  "input_source_hashes": {
+    "DATA_DICTIONARY.txt": "380e3333425fb1020ddab895b32ab81b42024f9a98a645b57bf533374076bcd7",
+    "ticket_export.csv": "597fede9f27dea5f967515f22fe8b202309287fc780cc89ad62a8ccaedc5ae9f",
+    "PROMPT.txt": "0f92b86cc61bd4af5f8d554778f6c936329d28ee38f201f7a0613d0b1c99309a",
+    "staffing_notes.txt": "bd8ebcbf9b6f4841b6c00c9cb58cbfbd5f140f187cf82eb8050084a3d07162df"
+  },
+  "unique_artifact_sets": [
+    {
+      "label": "A",
+      "representative_cutoff_seconds": 90,
+      "artifact_hashset_sha256": "bffd2b3eeaf715ced7980b3269390783db7499285da486e90ab85fca41498c22",
+      "artifacts": {
+        "analyze.py": {
+          "sha256": "a3864d46e05aa686075f5f9afc1632c2de841b099cb663859360068ce39fdbbf",
+          "bytes": 4165
+        },
+        "metrics.json": {
+          "sha256": "b6d608ee0c99fe0c6c7c04d88debf2261b6937642fbea865141b993f5117c1c5",
+          "bytes": 5057
+        },
+        "report.md": {
+          "sha256": "50f607e25f39d9736295131e0e95e5c003f65a4585022496b4e5e776af31e578",
+          "bytes": 4395
+        }
+      },
+      "weighted_score": 100,
+      "weighted_max": 100,
+      "mandatory_score": 70,
+      "mandatory_max": 70,
+      "optional_score": 30,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "5-9",
+              "text": "420 tickets; 206 breaches (49.05%); 58 unanswered; 172 unresolved; median 4.23 among 362 responded; all qualifying April denominator; 1/4/12 elapsed-hour priority SLAs, strict greater-than, unanswered age to instant."
+            },
+            {
+              "file": "analyze.py",
+              "lines": "24-41,47-56",
+              "text": "Creation-to-first-reply or cutoff; responded-only median; unanswered nonblank test; unresolved retained status != resolved; April arrival filtering."
+            }
+          ]
+        },
+        "M2": {
+          "score": 25,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 2,
+            "real_risk_priority": 3,
+            "other_queues_tradeoff": 2,
+            "capacity_incident_uncertainty": 2,
+            "feasible_specialist_generalist": 2,
+            "concrete_post_trial_check": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "3,11-19,44-46",
+              "text": "Technical 2, Billing 0, Account 0; available specialist can cover both whole shifts. Queue counts/rates are correct. Technical largest risk; Billing coverage opportunity cost; Account unresolved count is not first-response risk. No tickets-per-shift forecast; incident fix uncertainty; log arrivals, priority and actual shift hours, matured-cohort same-definition check and spillover."
+            }
+          ]
+        },
+        "M3": {
+          "score": 15,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 4,
+            "observational_causality_caution": 4,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "30,42-46",
+              "text": "670 raw -> exclude 11 cutoff rows -> 576 latest eligible IDs -> exclude 16 tests -> 140 March -> 420 April. Recent unanswered tickets have less time to exceed SLA; explicit as-of instant; staffing causality cannot be established and incident disappearance cannot be assumed."
+            }
+          ]
+        },
+        "O1": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "23-30",
+              "text": "83/57.83%; 115/44.35%; 90/51.11%; 132/46.21%. Rates fluctuate; final bucket nine days and recent tickets less mature."
+            }
+          ]
+        },
+        "O2": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 2,
+            "mix_caution_or_noncausal_observation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "32-38",
+              "text": "Enterprise 85/51.76%; Small business 158/47.47%; Consumer 177/49.15%. Only 4.29 percentage-point spread; queue/priority mix prevents segment-effect conclusion."
+            }
+          ]
+        },
+        "O3": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "48",
+              "text": "python output/analyze.py input"
+            },
+            {
+              "file": "analyze.py",
+              "lines": "3-91",
+              "text": "Standard-library script, correct semantics; disposable reconstruction exactly equals saved metrics JSON."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "usable_core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": true,
+        "M3": true
+      },
+      "report": {
+        "present": true,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": 676,
+        "at_most_700_words": true,
+        "required_report_missing": false
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/A_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "A",
+        "representative_cutoff_seconds": 90,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analyze.py",
+          "input"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.04508235699904617,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "b6d608ee0c99fe0c6c7c04d88debf2261b6937642fbea865141b993f5117c1c5",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "high",
+      "confidence_note": "Direct saved evidence and exact disposable reconstruction."
+    },
+    {
+      "label": "B",
+      "representative_cutoff_seconds": 60,
+      "artifact_hashset_sha256": "d159f1e6c30ae0de60275f06ad5907957fbc85946daa2b178bbad0b43c9abc7c",
+      "artifacts": {
+        "analyze.py": {
+          "sha256": "fec2a11cac97e76dd7088935cd86a0bacf04861912cee041902e4e114dd6463c",
+          "bytes": 2870
+        },
+        "metrics.json": {
+          "sha256": "3061b188ee4a1bfe0a70673a29bedf7ec1ab8fd7fe7f5ed1c6d5d34160737a68",
+          "bytes": 4954
+        },
+        "report.md": {
+          "sha256": "db3b5deb2d69d97e5fde331558123b8412296d3b18547482d959f8112f1b2a3b",
+          "bytes": 4169
+        }
+      },
+      "weighted_score": 100,
+      "weighted_max": 100,
+      "mandatory_score": 70,
+      "mandatory_max": 70,
+      "optional_score": 30,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "2,10,18,21",
+              "text": "All six correct values, April arrivals as of 2026-05-01 00:00 UTC, all-ticket denominator, strict elapsed 1/4/12-hour SLA including overdue unanswered, responded-only median and retained unresolved-status definition."
+            }
+          ]
+        },
+        "M2": {
+          "score": 25,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 2,
+            "real_risk_priority": 3,
+            "other_queues_tradeoff": 2,
+            "capacity_incident_uncertainty": 2,
+            "feasible_specialist_generalist": 2,
+            "concrete_post_trial_check": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "5-7,12-18,42",
+              "text": "Exactly two indivisible Technical specialist shifts, correct three-queue comparison, real largest Technical burden, explicit Billing/Account trade-off, unmeasured shift productivity and incident attribution, priority/arrival-mix post-trial check."
+            }
+          ]
+        },
+        "M3": {
+          "score": 15,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 4,
+            "observational_causality_caution": 4,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "21,31,42-44",
+              "text": "All five audit counts and correct order; pre-cutoff filtering prevents historical-state replacement. Recent unanswered arrivals have less time to breach. Observational comparison cannot prove causation; fix effect not established at line 5."
+            }
+          ]
+        },
+        "O1": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "24-31",
+              "text": "All four correct April-arrival weekly counts/rates; unequal final bucket and unequal-age/mix caution."
+            }
+          ]
+        },
+        "O2": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 2,
+            "mix_caution_or_noncausal_observation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "33-39",
+              "text": "All three correct segment counts/rates; Enterprise highest rate and Consumer largest breach count; priority/queue mix and no segment-effect inference."
+            }
+          ]
+        },
+        "O3": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "46",
+              "text": "python3 output/analyze.py input/ticket_export.csv output/metrics.json"
+            },
+            {
+              "file": "analyze.py",
+              "lines": "2-26",
+              "text": "Standard-library script, correct cleaning and metric semantics; full saved JSON reproduced exactly."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "usable_core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": true,
+        "M3": true
+      },
+      "report": {
+        "present": true,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": 643,
+        "at_most_700_words": true,
+        "required_report_missing": false
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/B_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "B",
+        "representative_cutoff_seconds": 60,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analyze.py",
+          "input/ticket_export.csv",
+          "output/metrics.json"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.042001843998150434,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "3061b188ee4a1bfe0a70673a29bedf7ec1ab8fd7fe7f5ed1c6d5d34160737a68",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "high",
+      "confidence_note": "Direct saved evidence and exact disposable reconstruction."
+    },
+    {
+      "label": "C",
+      "representative_cutoff_seconds": 90,
+      "artifact_hashset_sha256": "3151496f69656ed037a40f030c2373f7cb6efc27c708d1b22001d31d9a5bebe5",
+      "artifacts": {
+        "analysis.py": {
+          "sha256": "0a0a2f937ce6f656dfb7fb2e0941571785599797dba53c7757081bef3f0119cf",
+          "bytes": 4552
+        },
+        "metrics.json": {
+          "sha256": "e602098eb5336400b71b5894a7ff2ad58d2fe58ffb171d25d474322326dab5a2",
+          "bytes": 5515
+        },
+        "report.md": {
+          "sha256": "1c922b256a3af1baddf21911923e63395c57f34f9cc62cdf4fb612cf8cdeff0b",
+          "bytes": 4247
+        }
+      },
+      "weighted_score": 100,
+      "weighted_max": 100,
+      "mandatory_score": 70,
+      "mandatory_max": 70,
+      "optional_score": 30,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "5-9,36",
+              "text": "All six correct values and required April-arrival/all-ticket SLA/overdue-unanswered/responded-only median definitions; unresolved status definition explicit."
+            }
+          ]
+        },
+        "M2": {
+          "score": 25,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 2,
+            "real_risk_priority": 3,
+            "other_queues_tradeoff": 2,
+            "capacity_incident_uncertainty": 2,
+            "feasible_specialist_generalist": 2,
+            "concrete_post_trial_check": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "3,11-19,38-40",
+              "text": "Exactly two whole Technical shifts covered by specialist, all three queues correctly compared, true high Technical risk, feasible Billing alternative and Account trade-off, no clearance estimate, incident uncertainty and priority/age-adjusted post-trial check."
+            }
+          ]
+        },
+        "M3": {
+          "score": 15,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 4,
+            "observational_causality_caution": 4,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "30,36-40",
+              "text": "670 -> exclude 11 -> 576 retained IDs -> exclude 16 tests -> 140 March; April 1 inclusive/May 1 exclusive. Recent unanswered tickets may breach later. Observational snapshot cannot establish staffing causes, incident window cannot establish fix effect (line 17)."
+            }
+          ]
+        },
+        "O1": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "23-30",
+              "text": "All four correct weekly counts/rates; fluctuation, nine-day bucket, and maturation caution."
+            }
+          ]
+        },
+        "O2": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 2,
+            "mix_caution_or_noncausal_observation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "32",
+              "text": "All three correct segment counts/rates, Enterprise slightly highest rate and Consumer largest breach count; mix caution and no segment effect."
+            }
+          ]
+        },
+        "O3": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "42",
+              "text": "python3 output/analysis.py input/ticket_export.csv output/metrics.json"
+            },
+            {
+              "file": "analysis.py",
+              "lines": "5-92",
+              "text": "Correct standard-library supplied-input reconstruction; full saved JSON reproduced exactly."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "usable_core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": true,
+        "M3": true
+      },
+      "report": {
+        "present": true,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": 644,
+        "at_most_700_words": true,
+        "required_report_missing": false
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/C_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "C",
+        "representative_cutoff_seconds": 90,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analysis.py",
+          "input/ticket_export.csv",
+          "output/metrics.json"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.04557020300126169,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "e602098eb5336400b71b5894a7ff2ad58d2fe58ffb171d25d474322326dab5a2",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "high",
+      "confidence_note": "Direct saved evidence and exact disposable reconstruction."
+    },
+    {
+      "label": "D",
+      "representative_cutoff_seconds": 90,
+      "artifact_hashset_sha256": "e2a58b3bafc064b318239f8a2f83a0a75ec3918b1ed5943a0230881bc3e91d86",
+      "artifacts": {
+        "analyze.py": {
+          "sha256": "b4ee313906cfe47cce0c6ea94d98f87db40f1630fa3351f5fca14e2bd8119eb3",
+          "bytes": 3753
+        },
+        "metrics.json": {
+          "sha256": "1be2bd69e20ef30a1d214a04137664eddf689884e1d69610fa9448bddb1c9fdf",
+          "bytes": 2395
+        },
+        "report.md": {
+          "sha256": "74c525fff7dcd12ad3b326303c1d7c5803c2a8e8adb08392dc9c9102bbae4d13",
+          "bytes": 4225
+        }
+      },
+      "weighted_score": 100,
+      "weighted_max": 100,
+      "mandatory_score": 70,
+      "mandatory_max": 70,
+      "optional_score": 30,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "5-7,21,23",
+              "text": "All six correct values and definitions: April arrivals, all-ticket denominator, strict elapsed priority SLA with unanswered-to-cutoff, responded-only median and unresolved status."
+            }
+          ]
+        },
+        "M2": {
+          "score": 25,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 2,
+            "real_risk_priority": 3,
+            "other_queues_tradeoff": 2,
+            "capacity_incident_uncertainty": 2,
+            "feasible_specialist_generalist": 2,
+            "concrete_post_trial_check": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "3,9-17,46",
+              "text": "Both whole shifts to Technical specialist; correct queue facts, measured largest risk, Billing/Account trade-off, capacity/incident and May-demand uncertainty, log shifts/arrivals/priority and matured same-definition queue comparison."
+            }
+          ]
+        },
+        "M3": {
+          "score": 15,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 4,
+            "observational_causality_caution": 4,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "23,34,46",
+              "text": "All five audit counts with cutoff-before-dedup-before-tests/cohort order. Newer arrivals less time to exceed SLA; exact April/as-of boundaries; no incident-fix or trial causal proof."
+            }
+          ]
+        },
+        "O1": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "27-34",
+              "text": "All correct weekly counts/rates; no steady downward trend, nine-day final period and unequal-age caution."
+            }
+          ]
+        },
+        "O2": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 2,
+            "mix_caution_or_noncausal_observation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "36-42",
+              "text": "All correct segment counts/rates; Enterprise highest rate, narrow range and unknown queue/priority mix do not establish segment cause."
+            }
+          ]
+        },
+        "O3": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "48",
+              "text": "python3 output/analyze.py input/ticket_export.csv output/metrics.json"
+            },
+            {
+              "file": "analyze.py",
+              "lines": "2-93",
+              "text": "Standard-library correct reconstruction; full saved JSON reproduced exactly."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "usable_core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": true,
+        "M3": true
+      },
+      "report": {
+        "present": true,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": 666,
+        "at_most_700_words": true,
+        "required_report_missing": false
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/D_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "D",
+        "representative_cutoff_seconds": 90,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analyze.py",
+          "input/ticket_export.csv",
+          "output/metrics.json"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.04377089100307785,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "1be2bd69e20ef30a1d214a04137664eddf689884e1d69610fa9448bddb1c9fdf",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "high",
+      "confidence_note": "Direct saved evidence and exact disposable reconstruction."
+    },
+    {
+      "label": "E",
+      "representative_cutoff_seconds": 60,
+      "artifact_hashset_sha256": "acba5c224a1c5b1038440c26a330c706c7a94566c14779046b2b3ef1387e9f6a",
+      "artifacts": {
+        "analyze.py": {
+          "sha256": "e5ac7c67793fa2b17660a39f02d185d96c6fdff5c365350cd74bb8fc9e8de921",
+          "bytes": 2627
+        },
+        "metrics.json": {
+          "sha256": "80a0efa5d0c578a1964a5bfb442afa07c17755a2f253d55a9cd5d6a070795b12",
+          "bytes": 2376
+        }
+      },
+      "weighted_score": 71,
+      "weighted_max": 100,
+      "mandatory_score": 49,
+      "mandatory_max": 70,
+      "optional_score": 22,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "metrics.json",
+              "json_paths": [
+                "overall.tickets",
+                "overall.breached",
+                "overall.breach_rate_pct",
+                "overall.median_first_response_hours",
+                "overall.unanswered",
+                "overall.unresolved"
+              ],
+              "text": "420, 206, 49.05, 4.23, 58, 172 exactly correct."
+            },
+            {
+              "file": "analyze.py",
+              "lines": "8,10-20",
+              "text": "Saved executable definitions: April start<=created<cutoff; priority 1/4/12 elapsed hours; reply or cutoff age strictly > target; rate over len(rows); median only nonblank first replies; unanswered blank and unresolved status != resolved."
+            }
+          ]
+        },
+        "M2": {
+          "score": 12,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 0,
+            "real_risk_priority": 0,
+            "other_queues_tradeoff": 0,
+            "capacity_incident_uncertainty": 0,
+            "feasible_specialist_generalist": 0,
+            "concrete_post_trial_check": 0
+          },
+          "evidence": [
+            {
+              "file": "metrics.json",
+              "json_paths": [
+                "by_queue.Billing",
+                "by_queue.Technical",
+                "by_queue.Account"
+              ],
+              "text": "All 12 required queue facts correct. No allocation, risk justification, trade-off, staffing/source caution, or trial check exists in either saved file."
+            }
+          ]
+        },
+        "M3": {
+          "score": 7,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 0,
+            "observational_causality_caution": 0,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "metrics.json",
+              "json_paths": [
+                "audit"
+              ],
+              "text": "670 raw, 11 cutoff rows, 576 deduplicated IDs, 16 excluded tests, 140 excluded March IDs."
+            },
+            {
+              "file": "analyze.py",
+              "lines": "8-15,21",
+              "text": "Evaluation instant and April boundaries explicit; cutoff -> latest remaining ID -> exclude tests -> April cohort. No specific snapshot/unequal-age limitation or observational staffing/incident caution saved."
+            }
+          ]
+        },
+        "O1": {
+          "score": 8,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 0
+          },
+          "evidence": [
+            {
+              "file": "metrics.json",
+              "json_paths": [
+                "weekly"
+              ],
+              "text": "All eight requested weekly count/rate values correct; no cautious interpretation saved."
+            }
+          ]
+        },
+        "O2": {
+          "score": 6,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 0,
+            "mix_caution_or_noncausal_observation": 0
+          },
+          "evidence": [
+            {
+              "file": "metrics.json",
+              "json_paths": [
+                "by_segment"
+              ],
+              "text": "All six requested segment count/rate values correct; no useful comparative observation or mix/causality caution saved."
+            }
+          ]
+        },
+        "O3": {
+          "score": 8,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 0
+          },
+          "evidence": [
+            {
+              "file": "analyze.py",
+              "lines": "1-25",
+              "text": "Correct standard-library reconstruction; full saved JSON reproduced exactly. argparse flags/defaults exist, but no authored one-line run instruction is saved. The evaluator run command is not participant credit."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": false,
+        "M3": false,
+        "aggregate": false
+      },
+      "usable_core_reasons": {
+        "M1": "Pass: six exact values; saved code states correct April-arrival, strict elapsed priority SLA including overdue unanswered, and responded-only median definitions.",
+        "M2": "Fail: all queue facts correct, but no saved exactly-two-shift allocation or true-risk justification.",
+        "M3": "Fail: audit counts/order are correct, but no saved specific as-of/unequal-age limitation and no staffing/incident observational-causality caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": false,
+        "M3": false
+      },
+      "report": {
+        "present": false,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": null,
+        "at_most_700_words": null,
+        "required_report_missing": true
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/E_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "E",
+        "representative_cutoff_seconds": 60,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analyze.py",
+          "--input",
+          "input",
+          "--output",
+          "output"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.04377778599882731,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "80a0efa5d0c578a1964a5bfb442afa07c17755a2f253d55a9cd5d6a070795b12",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "medium-high",
+      "confidence_note": "Omissions and numeric accuracy are certain; scoring explicitly credits correct saved executable definitions under artifact-anywhere rule, while requiring actual authored recommendations/cautions/interpretations and a saved run instruction."
+    },
+    {
+      "label": "F",
+      "representative_cutoff_seconds": 60,
+      "artifact_hashset_sha256": "a19e08e200ef404ea7b377fbcbce4b7da279c4a3e92a2ce515e712a3a0e6eb07",
+      "artifacts": {
+        "analyze.py": {
+          "sha256": "4b870c5f04cf5405760b47c2c3c17f3e6f81238279a592fe7c1129c4368e285f",
+          "bytes": 2856
+        },
+        "metrics.json": {
+          "sha256": "1a11102b5ec975a2f2cd495e195a9cc3d80020481436b6d41cdb35abb262319c",
+          "bytes": 2356
+        },
+        "report.md": {
+          "sha256": "6f6004023b330b3e4426dc424aea47c55bd4b58e25520e522289ac3ba2047109",
+          "bytes": 4274
+        }
+      },
+      "weighted_score": 100,
+      "weighted_max": 100,
+      "mandatory_score": 70,
+      "mandatory_max": 70,
+      "optional_score": 30,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "7-9,27",
+              "text": "All six correct values and exact April/as-of definitions, all-ticket rate denominator, strict elapsed priority SLA with overdue unanswered, responded-only median and unresolved status."
+            }
+          ]
+        },
+        "M2": {
+          "score": 25,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 2,
+            "real_risk_priority": 3,
+            "other_queues_tradeoff": 2,
+            "capacity_incident_uncertainty": 2,
+            "feasible_specialist_generalist": 2,
+            "concrete_post_trial_check": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "3,13-23",
+              "text": "Exactly two whole Technical specialist shifts; correct queue facts, largest measured Technical risk, Billing/Account opportunity costs, feasible Billing generalist alternative; incident/productivity uncertainty; equal-follow-up priority-specific trial rates and arrivals check."
+            }
+          ]
+        },
+        "M3": {
+          "score": 15,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 4,
+            "observational_causality_caution": 4,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "23,27,38,42",
+              "text": "All five audit counts in correct order; explicit cutoff/April boundaries. Equal follow-up and recent-ticket exposure limitations; observational comparison cannot isolate staffing effects; incident disappearance not assumed."
+            }
+          ]
+        },
+        "O1": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "31-38",
+              "text": "All four correct weekly counts/rates; fluctuation, unequal final bucket and exposure caution."
+            }
+          ]
+        },
+        "O2": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 2,
+            "mix_caution_or_noncausal_observation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "40",
+              "text": "All three correct segment counts/rates; rates fairly close, Consumer most breaches, no causal interpretation and queue/priority mix caution."
+            }
+          ]
+        },
+        "O3": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "44-46",
+              "text": "python3 output/analyze.py input/ticket_export.csv output/metrics.json"
+            },
+            {
+              "file": "analyze.py",
+              "lines": "2-56",
+              "text": "Correct standard-library supplied-input reconstruction; full saved JSON reproduced exactly."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "usable_core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": true,
+        "M3": true
+      },
+      "report": {
+        "present": true,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": 646,
+        "at_most_700_words": true,
+        "required_report_missing": false
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/F_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "F",
+        "representative_cutoff_seconds": 60,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analyze.py",
+          "input/ticket_export.csv",
+          "output/metrics.json"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.03640495400031796,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "1a11102b5ec975a2f2cd495e195a9cc3d80020481436b6d41cdb35abb262319c",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "high",
+      "confidence_note": "Direct saved evidence and exact disposable reconstruction."
+    },
+    {
+      "label": "G",
+      "representative_cutoff_seconds": 60,
+      "artifact_hashset_sha256": "ff548ddff2ddefa4001189e6b9e6112fb7be3456b7cb022f9220fb2b519dd11f",
+      "artifacts": {
+        "analyze.py": {
+          "sha256": "426ca584a70a077cf7c5b744d5b5c9bd000fd0873bc34d6b00ef33e129749491",
+          "bytes": 3120
+        },
+        "metrics.json": {
+          "sha256": "45ebced4968d159b9085f86a5ef49642e4773a35b6ecab75dd7d767fe4a4579e",
+          "bytes": 3049
+        },
+        "report.md": {
+          "sha256": "d3897f15dabe3d36fa97b6638e882a82ed2c0d42b6cbf64d8f5fabb54579ca28",
+          "bytes": 3993
+        }
+      },
+      "weighted_score": 100,
+      "weighted_max": 100,
+      "mandatory_score": 70,
+      "mandatory_max": 70,
+      "optional_score": 30,
+      "optional_max": 30,
+      "rubric_breakdown": {
+        "M1": {
+          "score": 30,
+          "max": 30,
+          "subitems": {
+            "tickets": 5,
+            "breached": 5,
+            "breach_rate_pct": 5,
+            "responded_only_median": 5,
+            "unanswered": 5,
+            "unresolved": 5
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "8-17,34",
+              "text": "All six correct values and April/as-of boundaries; all-ticket denominator, strict 1/4/12 elapsed-hour SLA including unanswered cutoff age, responded-only median, unresolved retained-status definition."
+            }
+          ]
+        },
+        "M2": {
+          "score": 25,
+          "max": 25,
+          "subitems": {
+            "queue_facts": 12,
+            "exactly_two_whole_shifts": 2,
+            "real_risk_priority": 3,
+            "other_queues_tradeoff": 2,
+            "capacity_incident_uncertainty": 2,
+            "feasible_specialist_generalist": 2,
+            "concrete_post_trial_check": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "4-6,10-17,36-38",
+              "text": "Exactly two whole Technical specialist shifts, all correct queue facts, real first-response-risk justification; Billing/Account and feasible generalist alternatives; unmeasured shift productivity, incident uncertainty; priority-stratified new-arrival trial check with volume and other queues."
+            }
+          ]
+        },
+        "M3": {
+          "score": 15,
+          "max": 15,
+          "subitems": {
+            "audit_counts_and_order": 5,
+            "as_of_unequal_age_limitation": 4,
+            "observational_causality_caution": 4,
+            "april_cohort_and_instant": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "28,34-38",
+              "text": "All five audit counts with cutoff-before-dedup-before-test/April order, explicit evaluation instant; recent arrivals less mature; cannot prove staffing caused breaches and fix-straddling window cannot establish its effect (line 4)."
+            }
+          ]
+        },
+        "O1": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "weekly_ticket_counts_and_rates": 8,
+            "cautious_interpretation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "21-28",
+              "text": "All four correct weekly counts/rates; no steady improvement, final nine-day bucket and exposure caution."
+            }
+          ]
+        },
+        "O2": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "segment_ticket_counts_and_rates": 6,
+            "useful_comparison": 2,
+            "mix_caution_or_noncausal_observation": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "30",
+              "text": "All three correct segment counts/rates; Enterprise highest rate, modest differences, mix caution and no segment-effect inference."
+            }
+          ]
+        },
+        "O3": {
+          "score": 10,
+          "max": 10,
+          "subitems": {
+            "reconstructs_submitted_mandatory_figures": 6,
+            "cleaning_metric_semantics": 2,
+            "valid_saved_run_instruction": 2
+          },
+          "evidence": [
+            {
+              "file": "report.md",
+              "lines": "40",
+              "text": "python3 output/analyze.py input/ticket_export.csv output/metrics.json"
+            },
+            {
+              "file": "analyze.py",
+              "lines": "3-55",
+              "text": "Correct standard-library supplied-input reconstruction; full saved JSON reproduced exactly."
+            }
+          ]
+        }
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "usable_core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "mandatory_items_complete": {
+        "M1": true,
+        "M2": true,
+        "M3": true
+      },
+      "report": {
+        "present": true,
+        "word_count_method": "len(report_text.split()), conservative whitespace tokens including Markdown table tokens",
+        "word_count": 636,
+        "at_most_700_words": true,
+        "required_report_missing": false
+      },
+      "numeric_checker": {
+        "score": 61,
+        "max": 61,
+        "all_checks_ok": true,
+        "evidence_file": "reproduction/G_numeric_checker.json",
+        "interpretation": "Numeric evidence only, not complete grade."
+      },
+      "reproduction": {
+        "label": "G",
+        "representative_cutoff_seconds": 60,
+        "command": [
+          "python3",
+          "-I",
+          "-S",
+          "offline_runner.py",
+          "output/analyze.py",
+          "input/ticket_export.csv",
+          "output/metrics.json"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 0.03788631000497844,
+        "timed_out": false,
+        "reconstructed_saved_json_semantic_equality": true,
+        "generated_metrics_sha256": "45ebced4968d159b9085f86a5ef49642e4773a35b6ecab75dd7d767fe4a4579e",
+        "all_submitted_mandatory_figures_match_key": true,
+        "mandatory_figure_mismatches": [],
+        "disposable_input_unchanged": true,
+        "original_snapshot_unchanged": true,
+        "actual_limits": {
+          "wall_timeout_seconds": 15,
+          "cpu_soft_and_hard_seconds": 5,
+          "address_space_bytes": 268435456,
+          "file_size_bytes": 10485760,
+          "open_file_descriptors": 128,
+          "isolated_python": true,
+          "site_disabled": true,
+          "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+          "packages_installed": false
+        }
+      },
+      "confidence": "high",
+      "confidence_note": "Direct saved evidence and exact disposable reconstruction."
+    }
+  ],
+  "per_label_cutoff": [
+    {
+      "label": "A",
+      "cutoff_seconds": 90,
+      "observed_elapsed_seconds": 90.07896495999739,
+      "snapshot_utc": "2026-10-11T05:08:35.494677+00:00",
+      "artifact_hashset_sha256": "bffd2b3eeaf715ced7980b3269390783db7499285da486e90ab85fca41498c22",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "A",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 676,
+      "confidence": "high"
+    },
+    {
+      "label": "A",
+      "cutoff_seconds": 180,
+      "observed_elapsed_seconds": 180.0200111009981,
+      "snapshot_utc": "2026-10-11T05:10:05.435562+00:00",
+      "artifact_hashset_sha256": "bffd2b3eeaf715ced7980b3269390783db7499285da486e90ab85fca41498c22",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "A",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 676,
+      "confidence": "high"
+    },
+    {
+      "label": "A",
+      "cutoff_seconds": 300,
+      "observed_elapsed_seconds": 300.077419852998,
+      "snapshot_utc": "2026-10-11T05:12:05.492918+00:00",
+      "artifact_hashset_sha256": "bffd2b3eeaf715ced7980b3269390783db7499285da486e90ab85fca41498c22",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "A",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 676,
+      "confidence": "high"
+    },
+    {
+      "label": "B",
+      "cutoff_seconds": 60,
+      "observed_elapsed_seconds": 60.02694101999805,
+      "snapshot_utc": "2026-10-11T05:12:24.421043+00:00",
+      "artifact_hashset_sha256": "d159f1e6c30ae0de60275f06ad5907957fbc85946daa2b178bbad0b43c9abc7c",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "B",
+      "deduplicated_to_representative_cutoff_seconds": 60,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 643,
+      "confidence": "high"
+    },
+    {
+      "label": "C",
+      "cutoff_seconds": 90,
+      "observed_elapsed_seconds": 90.07854548999603,
+      "snapshot_utc": "2026-10-11T05:08:53.564768+00:00",
+      "artifact_hashset_sha256": "3151496f69656ed037a40f030c2373f7cb6efc27c708d1b22001d31d9a5bebe5",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "C",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 644,
+      "confidence": "high"
+    },
+    {
+      "label": "C",
+      "cutoff_seconds": 180,
+      "observed_elapsed_seconds": 180.0283603650023,
+      "snapshot_utc": "2026-10-11T05:10:23.514548+00:00",
+      "artifact_hashset_sha256": "3151496f69656ed037a40f030c2373f7cb6efc27c708d1b22001d31d9a5bebe5",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "C",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 644,
+      "confidence": "high"
+    },
+    {
+      "label": "C",
+      "cutoff_seconds": 300,
+      "observed_elapsed_seconds": 300.06711636899854,
+      "snapshot_utc": "2026-10-11T05:12:23.553134+00:00",
+      "artifact_hashset_sha256": "3151496f69656ed037a40f030c2373f7cb6efc27c708d1b22001d31d9a5bebe5",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "C",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 644,
+      "confidence": "high"
+    },
+    {
+      "label": "D",
+      "cutoff_seconds": 90,
+      "observed_elapsed_seconds": 90.06482913399668,
+      "snapshot_utc": "2026-10-11T05:10:10.893051+00:00",
+      "artifact_hashset_sha256": "e2a58b3bafc064b318239f8a2f83a0a75ec3918b1ed5943a0230881bc3e91d86",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "D",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 666,
+      "confidence": "high"
+    },
+    {
+      "label": "D",
+      "cutoff_seconds": 180,
+      "observed_elapsed_seconds": 180.01587466499768,
+      "snapshot_utc": "2026-10-11T05:11:40.844270+00:00",
+      "artifact_hashset_sha256": "e2a58b3bafc064b318239f8a2f83a0a75ec3918b1ed5943a0230881bc3e91d86",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "D",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 666,
+      "confidence": "high"
+    },
+    {
+      "label": "D",
+      "cutoff_seconds": 300,
+      "observed_elapsed_seconds": 300.0168189019969,
+      "snapshot_utc": "2026-10-11T05:13:40.845501+00:00",
+      "artifact_hashset_sha256": "e2a58b3bafc064b318239f8a2f83a0a75ec3918b1ed5943a0230881bc3e91d86",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "D",
+      "deduplicated_to_representative_cutoff_seconds": 90,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 666,
+      "confidence": "high"
+    },
+    {
+      "label": "E",
+      "cutoff_seconds": 60,
+      "observed_elapsed_seconds": 60.05119552000542,
+      "snapshot_utc": "2026-10-11T05:12:08.611705+00:00",
+      "artifact_hashset_sha256": "acba5c224a1c5b1038440c26a330c706c7a94566c14779046b2b3ef1387e9f6a",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "E",
+      "deduplicated_to_representative_cutoff_seconds": 60,
+      "weighted_score": 71,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 12,
+        "M3": 7,
+        "O1": 8,
+        "O2": 6,
+        "O3": 8
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": false,
+        "M3": false,
+        "aggregate": false
+      },
+      "core_reasons": {
+        "M1": "Pass: six exact values; saved code states correct April-arrival, strict elapsed priority SLA including overdue unanswered, and responded-only median definitions.",
+        "M2": "Fail: all queue facts correct, but no saved exactly-two-shift allocation or true-risk justification.",
+        "M3": "Fail: audit counts/order are correct, but no saved specific as-of/unequal-age limitation and no staffing/incident observational-causality caution."
+      },
+      "report_word_count": null,
+      "confidence": "medium-high"
+    },
+    {
+      "label": "F",
+      "cutoff_seconds": 60,
+      "observed_elapsed_seconds": 60.0220539189977,
+      "snapshot_utc": "2026-10-11T05:15:47.002986+00:00",
+      "artifact_hashset_sha256": "a19e08e200ef404ea7b377fbcbce4b7da279c4a3e92a2ce515e712a3a0e6eb07",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "F",
+      "deduplicated_to_representative_cutoff_seconds": 60,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 646,
+      "confidence": "high"
+    },
+    {
+      "label": "G",
+      "cutoff_seconds": 60,
+      "observed_elapsed_seconds": 60.00658105200273,
+      "snapshot_utc": "2026-10-11T05:16:02.254761+00:00",
+      "artifact_hashset_sha256": "ff548ddff2ddefa4001189e6b9e6112fb7be3456b7cb022f9220fb2b519dd11f",
+      "all_manifest_files_stable_during_read": true,
+      "manifest_hashes_match_actual_artifacts": true,
+      "graded_unique_set": "G",
+      "deduplicated_to_representative_cutoff_seconds": 60,
+      "weighted_score": 100,
+      "rubric_breakdown": {
+        "M1": 30,
+        "M2": 25,
+        "M3": 15,
+        "O1": 10,
+        "O2": 10,
+        "O3": 10
+      },
+      "usable_core": {
+        "M1": true,
+        "M2": true,
+        "M3": true,
+        "aggregate": true
+      },
+      "core_reasons": {
+        "M1": "All values and definitions are correct in saved report and/or code.",
+        "M2": "All queue facts plus exactly two feasible whole shifts justified by true risk.",
+        "M3": "All audit counts/order, specific unequal-age limitation and clear staffing/incident noncausal caution."
+      },
+      "report_word_count": 636,
+      "confidence": "high"
+    }
+  ]
+}

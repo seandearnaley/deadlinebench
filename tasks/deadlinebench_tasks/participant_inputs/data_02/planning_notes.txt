@@ -1,0 +1,13 @@
+SYNTHETIC SOURCE: June 14 Cobalt Pantry planning notes.
+
+Manager: The June trial budget is exactly $2,000 and must cover at least two channels. Assign whole USD; zero is allowed for unused channels. The Email audience is finite, so Email may receive at most $500. Partner inventory is capped at $700. Search and Social have no cap within this trial. There is no measured response curve allowing us to extrapolate May dollars into June incremental revenue.
+
+Email owner: Existing subscribers are often repeat customers. May contribution may reflect established demand as well as email effectiveness. We cannot expand the address list during the trial.
+
+Social owner: Recent creative may attract different customers. Please inspect the return signal before simply scaling spend. Returns are recorded as partial refund events, not a yes/no label per order.
+
+Search owner: Search includes branded and generic traffic; the dataset does not separate them. A strong attribution result does not establish incremental acquisition.
+
+Partner owner: Partner volume is smaller and placement timing matters. We can place a small follow-up test, but have no promised conversion rate.
+
+Manager: Use the observed contribution to prioritize hypotheses. Propose an evaluation measure for the trial and avoid calling this a causal ROI study or a forecast of profit.

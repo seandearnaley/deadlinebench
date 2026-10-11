@@ -1,0 +1,19 @@
+DeadlineBench data_01: Prioritize support coverage
+
+All data, organizations and people in this case are synthetic. Work offline using only these inputs and the Python standard library if useful. Do not install packages or alter the input files. Your deadline may be 90, 180 or 300 seconds. Save useful partial work early: only files in output/ at the cutoff will be graded.
+
+You are the operations analyst for Northstar Desk. Its support director must allocate two additional four-hour analyst shifts for the first week of May. Analyze April arrivals as of 2026-05-01 00:00 UTC and write a decision-ready brief, at most 700 words, in output/report.md. Put computed figures in output/metrics.json so they can be checked independently.
+
+Inputs: ticket_export.csv, DATA_DICTIONARY.txt, staffing_notes.txt.
+
+Mandatory requirements (70 points):
+1. Calculate the overall April cohort's ticket count, SLA-breach count and rate (percent), median first-response hours among responded tickets, unanswered count and unresolved count. Explain the denominator and SLA definition briefly. (30)
+2. Compare the Billing, Technical and Account queues using ticket counts, breach counts/rates and unanswered counts. Recommend an allocation of exactly two extra shifts, supported by the figures and the staffing constraints. Different defensible allocations are acceptable. (25)
+3. Explain the cleaning decisions and give the audit counts for raw rows, rows excluded by the update cutoff, deduplicated ticket IDs, excluded test IDs and excluded March IDs. Include material limitations of this snapshot and avoid unsupported causal claims. (15)
+
+Useful optional items (30 points):
+1. Show ticket counts and breach rates for April 1-7, 8-14, 15-21 and 22-30, with one cautious interpretation. (10)
+2. Show ticket counts and breach rates by customer segment, with one useful observation that does not claim causation. (10)
+3. Include a reproducible standard-library analysis script and a one-line run instruction. It should recreate your submitted metrics from the supplied CSV. (10)
+
+metrics.json format: a JSON object with overall, by_queue and audit objects. overall keys: tickets, breached, breach_rate_pct, median_first_response_hours, unanswered, unresolved. by_queue keys: Billing, Technical, Account; each value has the same six metric keys. audit keys: raw_rows, rows_at_or_after_cutoff, deduplicated_ids, test_ids_excluded, march_ids_excluded. Optional weekly keys: Apr 1-7, Apr 8-14, Apr 15-21, Apr 22-30; optional by_segment keys: Enterprise, Small business, Consumer; each value has the same six metric keys. Extra keys are allowed. Round hours and percentages to two decimals. Counts are integers. Valid JSON is useful, but a readable correct report still earns its applicable content credit if JSON is unfinished.

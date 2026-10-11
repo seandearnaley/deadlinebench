@@ -1,0 +1,12 @@
+# S03: Event measurement and assignment note
+SYNTHETIC: All observations and methods described here are invented.
+
+[S03-P1] Compute a within-type rate as confirmed mis-sorts / parcels × 10,000. Standard and oversize parcels require different handling. Weight the two rates using the charter's 60/40 mix for the central comparison. Do not mistake the trial's own observed mix for the required planning mix. The data contain one baseline window, one initial-trial window, and one short follow-up window; their stages are explicit in the CSV.
+
+[S03-P2] End-of-shift manifest reconciliation and internal exception review identified confirmed mis-sorts in all arms using the same event definition. A scanner alert is not counted unless the wrong chute assignment is verified. A corrected label-placement issue with no wrong-chute assignment is not a mis-sort. Capture completeness was not independently estimated, so the observed counts are not a proof that every event was found. No customer-complaint counts are included in the calculation table.
+
+[S03-P3] Lanes were not randomly assigned. SignalGate occupied two lanes with existing electrical/network access; RouteCraft used two other lanes with supervisors who volunteered. The baseline covered those lane groups before either intervention. Standard-versus-oversize labels allow one adjustment, but fragile-item share, destination complexity, staff tenure, and peak-hour distributions were not fully matched. A holiday promotion in the initial-trial weeks changed destination concentration.
+
+[S03-P4] Temporary/new staff represented 42% of baseline shifts, 38% of initial SignalGate shifts, and 18% of initial RouteCraft shifts. In follow-up, those proportions were 32% and 47%, respectively. RouteCraft's initial cohort also received daily launch coaching; normal fortnightly refreshers had not yet occurred by follow-up. Neither staffing mix nor coaching intensity was randomized. A deterioration after turnover is operationally important, but these data alone cannot establish training decay as its sole cause.
+
+[S03-P5] The initial event counts are small. The packet supplies no event-level variance, formal significance test, or causal estimate. Rates are observations and projections. Prevented events projected from baseline-minus-trial rates assume comparable workloads, stable rates, full-year operation, and no offsetting change in error capture. The required financial arithmetic deliberately makes these assumptions transparent rather than validating them.

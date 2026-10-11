@@ -1,0 +1,19 @@
+DEADLINEBENCH RESEARCH 01: Choose a support-search pilot
+
+This is a wholly synthetic exercise. All organizations, people, products, records, and numbers in the packet are invented. Do not contact anyone or use external research, packages, paid APIs, or a network. Use only the provided files and tools already available locally.
+
+You advise the operations director of Larchline Services, an invented support organization. Decide the next step for its multilingual knowledge-search project: pilot EmberSearch, pilot CoveFind, or defer either vendor for a narrower validation test. The director needs an evidence-based decision brief, not a vendor marketing summary. There is no predetermined winning option.
+
+Save your brief as output/report.md. Save a useful partial report early and improve it as time permits. Only files saved by each evaluation snapshot count; the same rubric is applied independently at 90, 180, and 300 seconds. Optional artifacts may be saved in output/ and referenced from the report. Do not modify the input packet.
+
+Mandatory requirements (70 points total):
+1. Recommendation (30 points): Make a clear next-step choice. Explain it against the charter's speed, answer-trust, first-year budget, and implementation priorities, using evidence references. State the most important tradeoff or uncertainty and concrete conditions before wider deployment. A defensible choice of either pilot or deferral can receive full credit.
+2. Evidence reconciliation (25 points): Reconcile at least three decision-relevant tensions or conflicts across the sources. For each, identify the competing evidence with source IDs and paragraph/row locations, explain what can and cannot be concluded, and state how it affects the decision. Also identify one consequential uncertainty that remains unresolved. Distinguish observed results, supplier claims, and inference; do not present this packet as proving causal effects or statistical significance.
+3. Decision numbers (15 points): Using the charter's 70% English / 30% Spanish answered-ticket mix, calculate weighted mean handling minutes for baseline and each vendor, each vendor's absolute and percentage reduction from baseline, and each vendor's first-year all-in cost. Include supplier fees plus initial and 12 months of ongoing internal hours at the charter's hourly cost. Show formulas or enough working to audit the results, and state the projection's key comparability assumption.
+
+Useful optional items (30 points total):
+1. Evidence map (10 points): Link at least eight important decision claims to precise source IDs and locations, spanning at least five source IDs. Tag each claim as observed, quoted, or inferred. This may be a section or a separate artifact.
+2. Validation plan (10 points): Give a feasible plan of at most 12 weeks, with accountable roles, comparable speed and trust measures by language, and measurable continue/stop/expand criteria aligned with the charter. Keep staffing and reviewer constraints in view.
+3. Sensitivity (10 points): Recalculate both vendors' weighted handling minutes at 20% and 40% Spanish, find the Spanish share where their handling-time ranking ties, and explain whether these scenarios change your choice and why. Keep the distinction between a speed ranking and an overall decision.
+
+The source_manifest.csv lists the packet. Source IDs and paragraph/row IDs are stable citation anchors. Concise, accurate partial work earns credit; length alone does not.

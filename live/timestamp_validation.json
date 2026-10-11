@@ -1,0 +1,306 @@
+[
+  {
+    "run": "runs/scope2",
+    "cutoff": 300,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -247.904599,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 300,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -247.862355,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 300,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -212.570854,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 90,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -37.904599,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 90,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -37.862355,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 90,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -2.570854,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 180,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -127.904599,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 180,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -127.862355,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/scope2",
+    "cutoff": 180,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -92.570854,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 300,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -257.498178,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 300,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -257.461767,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 300,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -224.530867,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 90,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -47.498178,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 90,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -47.461767,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 90,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -14.530867,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 180,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -137.498178,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 180,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -137.461767,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/baseline",
+    "cutoff": 180,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -104.530867,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 300,
+    "file": "analysis.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -252.993451,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 300,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -252.944227,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 300,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -223.604419,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 90,
+    "file": "analysis.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -42.993451,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 90,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -42.944227,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 90,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -13.604419,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 180,
+    "file": "analysis.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -132.993451,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 180,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -132.944227,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs/clock",
+    "cutoff": 180,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -103.604419,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs_short/scope",
+    "cutoff": 60,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -27.340845,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs_short/scope",
+    "cutoff": 60,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -27.302584,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs_short/scope",
+    "cutoff": 60,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -1.051114,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs_short/baseline",
+    "cutoff": 60,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -29.217475,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "runs_short/baseline",
+    "cutoff": 60,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -29.18279,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "repeat_short/scope",
+    "cutoff": 60,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -31.21154,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "repeat_short/scope",
+    "cutoff": 60,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -31.1777,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "repeat_short/scope",
+    "cutoff": 60,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -4.532368,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "repeat_short/baseline",
+    "cutoff": 60,
+    "file": "analyze.py",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -30.366832,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "repeat_short/baseline",
+    "cutoff": 60,
+    "file": "metrics.json",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -30.331014,
+    "current_matching_file_predates_cutoff": true
+  },
+  {
+    "run": "repeat_short/baseline",
+    "cutoff": 60,
+    "file": "report.md",
+    "current_bytes_match_snapshot": true,
+    "latest_mtime_minus_cutoff_seconds": -2.466605,
+    "current_matching_file_predates_cutoff": true
+  }
+]

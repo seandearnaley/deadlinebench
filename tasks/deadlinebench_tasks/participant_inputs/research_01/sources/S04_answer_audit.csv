@@ -1,0 +1,5 @@
+synthetic,source_id,row_id,arm,language,sampled_answers,materially_correct,fully_traceable,critical_privacy_incidents
+true,S04,E-EN,EmberSearch,English,60,58,56,0
+true,S04,E-ES,EmberSearch,Spanish,40,29,23,0
+true,S04,C-EN,CoveFind,English,60,55,53,0
+true,S04,C-ES,CoveFind,Spanish,40,35,33,0

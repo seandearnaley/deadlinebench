@@ -1,0 +1,37 @@
+{
+  "label": "E",
+  "representative_cutoff_seconds": 60,
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "offline_runner.py",
+    "output/analyze.py",
+    "--input",
+    "input",
+    "--output",
+    "output"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"overall\": {\n    \"tickets\": 420,\n    \"breached\": 206,\n    \"breach_rate_pct\": 49.05,\n    \"median_first_response_hours\": 4.23,\n    \"unanswered\": 58,\n    \"unresolved\": 172\n  },\n  \"by_queue\": {\n    \"Billing\": {\n      \"tickets\": 143,\n      \"breached\": 59,\n      \"breach_rate_pct\": 41.26,\n      \"median_first_response_hours\": 3.96,\n      \"unanswered\": 11,\n      \"unresolved\": 55\n    },\n    \"Technical\": {\n      \"tickets\": 199,\n      \"breached\": 142,\n      \"breach_rate_pct\": 71.36,\n      \"median_first_response_hours\": 6.95,\n      \"unanswered\": 42,\n      \"unresolved\": 87\n    },\n    \"Account\": {\n      \"tickets\": 78,\n      \"breached\": 5,\n      \"breach_rate_pct\": 6.41,\n      \"median_first_response_hours\": 2.63,\n      \"unanswered\": 5,\n      \"unresolved\": 30\n    }\n  },\n  \"audit\": {\n    \"raw_rows\": 670,\n    \"rows_at_or_after_cutoff\": 11,\n    \"deduplicated_ids\": 576,\n    \"test_ids_excluded\": 16,\n    \"march_ids_excluded\": 140,\n    \"duplicate_rows_removed\": 83,\n    \"april_cohort_ids\": 420\n  },\n  \"weekly\": {\n    \"Apr 1-7\": {\n      \"tickets\": 83,\n      \"breached\": 48,\n      \"breach_rate_pct\": 57.83,\n      \"median_first_response_hours\": 4.31,\n      \"unanswered\": 11,\n      \"unresolved\": 28\n    },\n    \"Apr 8-14\": {\n      \"tickets\": 115,\n      \"breached\": 51,\n      \"breach_rate_pct\": 44.35,\n      \"median_first_response_hours\": 3.87,\n      \"unanswered\": 15,\n      \"unresolved\": 41\n    },\n    \"Apr 15-21\": {\n      \"tickets\": 90,\n      \"breached\": 46,\n      \"breach_rate_pct\": 51.11,\n      \"median_first_response_hours\": 3.96,\n      \"unanswered\": 15,\n      \"unresolved\": 31\n    },\n    \"Apr 22-30\": {\n      \"tickets\": 132,\n      \"breached\": 61,\n      \"breach_rate_pct\": 46.21,\n      \"median_first_response_hours\": 4.82,\n      \"unanswered\": 17,\n      \"unresolved\": 72\n    }\n  },\n  \"by_segment\": {\n    \"Enterprise\": {\n      \"tickets\": 85,\n      \"breached\": 44,\n      \"breach_rate_pct\": 51.76,\n      \"median_first_response_hours\": 4.22,\n      \"unanswered\": 12,\n      \"unresolved\": 37\n    },\n    \"Small business\": {\n      \"tickets\": 158,\n      \"breached\": 75,\n      \"breach_rate_pct\": 47.47,\n      \"median_first_response_hours\": 4.28,\n      \"unanswered\": 20,\n      \"unresolved\": 69\n    },\n    \"Consumer\": {\n      \"tickets\": 177,\n      \"breached\": 87,\n      \"breach_rate_pct\": 49.15,\n      \"median_first_response_hours\": 4.15,\n      \"unanswered\": 26,\n      \"unresolved\": 66\n    }\n  }\n}\n",
+  "stderr": "",
+  "elapsed_seconds": 0.04377778599882731,
+  "timed_out": false,
+  "reconstructed_saved_json_semantic_equality": true,
+  "generated_metrics_sha256": "80a0efa5d0c578a1964a5bfb442afa07c17755a2f253d55a9cd5d6a070795b12",
+  "all_submitted_mandatory_figures_match_key": true,
+  "mandatory_figure_mismatches": [],
+  "disposable_input_unchanged": true,
+  "original_snapshot_unchanged": true,
+  "actual_limits": {
+    "wall_timeout_seconds": 15,
+    "cpu_soft_and_hard_seconds": 5,
+    "address_space_bytes": 268435456,
+    "file_size_bytes": 10485760,
+    "open_file_descriptors": 128,
+    "isolated_python": true,
+    "site_disabled": true,
+    "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+    "packages_installed": false
+  }
+}

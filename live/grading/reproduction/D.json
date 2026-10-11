@@ -1,0 +1,35 @@
+{
+  "label": "D",
+  "representative_cutoff_seconds": 90,
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "offline_runner.py",
+    "output/analyze.py",
+    "input/ticket_export.csv",
+    "output/metrics.json"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "elapsed_seconds": 0.04377089100307785,
+  "timed_out": false,
+  "reconstructed_saved_json_semantic_equality": true,
+  "generated_metrics_sha256": "1be2bd69e20ef30a1d214a04137664eddf689884e1d69610fa9448bddb1c9fdf",
+  "all_submitted_mandatory_figures_match_key": true,
+  "mandatory_figure_mismatches": [],
+  "disposable_input_unchanged": true,
+  "original_snapshot_unchanged": true,
+  "actual_limits": {
+    "wall_timeout_seconds": 15,
+    "cpu_soft_and_hard_seconds": 5,
+    "address_space_bytes": 268435456,
+    "file_size_bytes": 10485760,
+    "open_file_descriptors": 128,
+    "isolated_python": true,
+    "site_disabled": true,
+    "network_policy": "Socket audit events and subprocess execution denied; inspected participant sources have no network calls.",
+    "packages_installed": false
+  }
+}

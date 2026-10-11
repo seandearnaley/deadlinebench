@@ -1,0 +1,21 @@
+SYNTHETIC DATA. The CSV is a shuffled append-only export containing overlapping snapshots.
+
+All timestamps are UTC ISO-8601. The evaluation instant is 2026-05-01T00:00:00Z, exclusive for updates and arrivals.
+1. Discard rows with updated_at at or after the evaluation instant.
+2. For each ticket_id, retain the remaining row with the latest updated_at. There are no ties. Snapshots, not events, are rows; do not sum them.
+3. Exclude tickets whose retained is_test is true, and then retain April arrivals: created_at >= 2026-04-01T00:00:00Z and < 2026-05-01T00:00:00Z.
+
+ticket_id: stable identifier.
+created_at: initial arrival time; unchanged across snapshots.
+updated_at: snapshot update time.
+queue: current owner, one of Billing, Technical, Account.
+priority: P1, P2 or P3, with first-response SLA targets of 1, 4 or 12 elapsed hours respectively, including nights and weekends.
+customer_segment: Enterprise, Small business or Consumer.
+status: open or resolved. Unresolved means retained status != resolved.
+first_response_at: first agent reply; blank means unanswered at the evaluation instant.
+resolved_at: resolution time; blank means not resolved.
+is_test: true for synthetic internal test tickets, otherwise false.
+
+A ticket breaches its first-response SLA if elapsed hours from creation to first response are STRICTLY greater than its priority target. For unanswered tickets, use elapsed hours from creation to the evaluation instant instead. An unanswered ticket not yet past its SLA is not a breach. The breach-rate denominator is all qualifying April tickets, including unanswered and unresolved tickets. Median first-response hours uses only qualifying tickets with a nonblank first_response_at. Do not treat unanswered tickets as a zero response time or use unresolved tickets as a different denominator.
+
+All nonblank timestamps are valid and chronological. Current snapshot does not capture shifts worked, ticket complexity, reopened histories or service satisfaction. Historical first responses do not change after the first response.

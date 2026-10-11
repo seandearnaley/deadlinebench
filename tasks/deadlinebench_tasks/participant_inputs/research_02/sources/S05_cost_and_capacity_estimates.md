@@ -1,0 +1,12 @@
+# S05: Internal cost and capacity estimates, 7 May 2026
+SYNTHETIC: Prepared by invented engineering lead Tali Reed and training manager Oren Pike.
+
+[S05-P1] SignalGate's central first-year incremental internal work is 320 initial hours for lane preparation, configuration, staff introduction, and acceptance checks plus 80 hours of first-year maintenance and support. Total 400 hours. These are not supplier hours; add their opportunity cost to the S02-G1 fees. The estimate assumes the cooperative's network is sufficient. It includes installing the standard new mounts in a full purchase.
+
+[S05-P2] RouteCraft's central first-year incremental internal work is 480 initial paid participant/supervisor hours plus 240 hours for refresher sessions, new-hire coaching, and administration. Total 720 hours. Add their opportunity cost to S02-R1 fees. The initial training cannot be scheduled simultaneously for everyone because coverage must remain intact. A shift-by-shift schedule could stay within the 500 initial-hour cap.
+
+[S05-P3] SignalGate might require an additional $18,000 of network work and 80 initial internal hours if another lane group's coverage is insufficient. That is excluded from central costs: the supplier has not surveyed the expansion lanes. With that contingency, first-year cost would be $114,000 and initial hours 400, so spending would exceed $110,000 even though hours fit. RouteCraft might require another 100 first-year coaching hours if turnover is high; then cost would be $99,500 and total annual hours 820, exceeding the 800-hour capacity even though spending fits. Neither contingency is a certainty.
+
+[S05-P4] The director's $95 avoided-cost convention is based on finance's central scenario, not a guaranteed cash refund or revenue gain. Some costs are service credits and some are staff opportunity cost. Depending on which errors are prevented and how redeployed time is valued, finance considers $60–$120 per event plausible. Do not add these components again to the all-in intervention cost; they are already summarized in the avoided-cost convention.
+
+[S05-P5] A common-workload next-step test could cost $9,000 supplier fees plus 120 internal hours ($9,000), totaling $18,000. This is within the separate $20,000 test budget and does not implement either cooperative-wide option. At least some of those hours must cover independent manifest review and peak-flow measurement. A plan that needs substantially more hours or runs both full expansions would need a new approval.

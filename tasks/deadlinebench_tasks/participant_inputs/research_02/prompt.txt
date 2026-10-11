@@ -1,0 +1,19 @@
+DEADLINEBENCH RESEARCH 02: Choose a parcel mis-sort intervention
+
+This is a wholly synthetic exercise. All organizations, people, products, records, and numbers in the packet are invented. Do not contact anyone or use external research, packages, paid APIs, or a network. Use only the provided files and tools already available locally.
+
+You advise the operations director of Alder Quay Parcel Cooperative, an invented parcel-handling organization. Choose the next step: a limited SignalGate scanner rollout, a limited RouteCraft training expansion, or a bounded common-workload comparison before selecting either. The director needs a practical evidence-based decision brief that considers errors, cost, peak-flow reliability, and durability. There is no predetermined winning option.
+
+Save your brief as output/report.md. Save a useful partial report early and improve it as time permits. Only files saved by each evaluation snapshot count; the same rubric is applied independently at 90, 180, and 300 seconds. Optional artifacts may be saved in output/ and referenced from the report. Do not modify the input packet.
+
+Mandatory requirements (70 points total):
+1. Recommendation (30 points): Make a clear next-step choice. Explain it against the charter's error reduction, first-year cost/capacity, peak-flow, and durability priorities, using evidence references. State the most important tradeoff or uncertainty and concrete conditions before wider deployment. Any of the three options can earn full credit when supported.
+2. Evidence reconciliation (25 points): Reconcile at least three decision-relevant tensions or conflicts across the sources. For each, identify competing evidence with source IDs and paragraph/row locations, explain what can and cannot be concluded, and state the decision consequence. Identify one consequential unresolved uncertainty. Distinguish observed results, supplier claims, and inference; do not claim the observational packet proves causality or statistical significance.
+3. Decision numbers (15 points): Use the charter's 60% standard / 40% oversize parcel mix and initial-trial rows to calculate baseline and each intervention's weighted confirmed mis-sort rate per 10,000 parcels. At 2.4 million annual parcels and $95 avoidable cost per confirmed mis-sort, calculate each intervention's annual avoided mis-sorts, gross avoided cost, first-year all-in cost, and first-year net savings. Show auditable formulas and the projection's key comparability/durability assumption. Include quoted supplier fees and all first-year internal hours at $75/hour; exclude costs not requested in the charter.
+
+Useful optional items (30 points total):
+1. Evidence map (10 points): Link at least eight important decision claims to precise source IDs and locations, spanning at least five source IDs. Tag each as observed, quoted, or inferred. This may be a section or a separate artifact.
+2. Validation plan (10 points): Propose a feasible comparison or limited-rollout plan of at most 12 weeks, with accountable roles, common-workload error and peak-flow measures, a durability check, and measurable continue/stop/expand criteria aligned with the charter and staff capacity.
+3. Sensitivity (10 points): Recalculate first-year net savings for both interventions if avoidable cost is $60 per mis-sort, find the per-mis-sort cost at which each breaks even under the central initial-trial rates, and explain whether these scenarios change your choice and why. Keep projected financial ranking separate from the overall decision.
+
+The source_manifest.csv lists the packet. Source IDs and paragraph/row IDs are stable citation anchors. Concise, accurate partial work earns credit; length alone does not.

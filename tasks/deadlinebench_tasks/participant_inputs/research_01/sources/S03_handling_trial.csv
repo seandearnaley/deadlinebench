@@ -1,0 +1,7 @@
+synthetic,source_id,row_id,arm,language,answered_tickets,logged_handling_minutes,agents,window,notes
+true,S03,B-EN,baseline,English,1600,16000,18,2026-02-02 to 2026-02-13,Matched queues retrospectively; human-written answers
+true,S03,B-ES,baseline,Spanish,600,7800,18,2026-02-02 to 2026-02-13,Matched queues retrospectively; human-written answers
+true,S03,E-EN,EmberSearch,English,600,4800,8,2026-03-09 to 2026-03-20,Voluntary experienced agents; mean must be minutes divided by tickets
+true,S03,E-ES,EmberSearch,Spanish,240,3000,8,2026-03-09 to 2026-03-20,Voluntary experienced agents; mean must be minutes divided by tickets
+true,S03,C-EN,CoveFind,English,580,4930,8,2026-03-09 to 2026-03-20,Different voluntary experienced agents; mean must be minutes divided by tickets
+true,S03,C-ES,CoveFind,Spanish,250,2750,8,2026-03-09 to 2026-03-20,Different voluntary experienced agents; mean must be minutes divided by tickets

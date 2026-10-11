@@ -1,0 +1,102 @@
+{
+  "source_archive_sha256": "e303c830f7189cd9d484271853c9a42bad12fcc35e32091ec9c31c69118b6095",
+  "modified_files": [
+    {
+      "file": "live/grading/reproduce_disposable.py",
+      "original_sha256": "ae0acc9f13786c6e235da3c9ee4a4dca7933c7807ef0c86f629ad55f3da2888a",
+      "published_sha256": "c6c3ead5d4e8944ef532ada8b7e9e988082e2c67861d3ccb732e6c14d35cf6ee",
+      "changes": [
+        "Replaced four absolute grading workspace paths with repository-relative paths."
+      ]
+    },
+    {
+      "file": "live/grading/write_scores.py",
+      "original_sha256": "69e58051befb48991c0e8e117bb9ab9e49117bd71e7baaa6808ccd36428922ce",
+      "published_sha256": "074688927c04003456c488dd58f6099d9cb31eaf715173e51cb19ec679ae69fe",
+      "changes": [
+        "Replaced four absolute grading workspace paths with repository-relative paths."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/A.json",
+      "original_sha256": "01e0db25e44101d923ee837bd30fd11f471bfce824ea0c94465d1cc7754bea15",
+      "published_sha256": "e94512db6d45dc6370380075c97325952ad12bc3bd27753f9ef8dc81656ea488",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/B.json",
+      "original_sha256": "8b77ae6d53dc2082c5b017bc7b8d3fb7c952f8acd3165677ab6fda247997eee9",
+      "published_sha256": "d9e22a57442d42d6f97efef9cff4b94858786dbf8a5b782736f0978410ba5d47",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/C.json",
+      "original_sha256": "5ac1c7d6649290eaa9b67b970e0843e569a3ece0b395ffe9eede2dc8f452170a",
+      "published_sha256": "7a8a9793e1ca7ac8bb64958a943eb00dc43f3c3f8561b22fbff3cbb2f3581fae",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/D.json",
+      "original_sha256": "a86e7aae801b1db45099a6453b3038543db1a0d70127f6aad0eed00d99357fe0",
+      "published_sha256": "a42526eac1194b3446241e4a5f86ebfa51ee3277a7ca386416bf893ace96b5ca",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/E.json",
+      "original_sha256": "1bf20cf902a24d4020cea76b5c9b8afc382cfd69d2003da73719aaf12d362a47",
+      "published_sha256": "f098f5c16cfef705147783dc3843fc5cefc2e80b5597d8eec42db08a722e4465",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/F.json",
+      "original_sha256": "bdf0327406becde7205c2b2b8f3c4efabefaedfb753954bf5524be07d2baf5dd",
+      "published_sha256": "3ac51b95b7eb3058438aa24bbceacc54896075ffbe98a9f5b6ae4bd4d4019a38",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/G.json",
+      "original_sha256": "b31bec8cc6be3eabff7810ffa57d917c7680cf2ec8f5dd7e3cadfd5daa0d2f82",
+      "published_sha256": "50ada0f819cf8de2d2839d71f6d1ab6a1994273f915dee4284161f2a2eba56ec",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/reproduction/summary.json",
+      "original_sha256": "f2432686946ba60a0f3b7720ec9122e981b05ebe29c51efb40ad466664b8ceec",
+      "published_sha256": "401b5950cf01d21d8164c3e6c4c7f3a8d3f08337434d9235c47686ffbac1f60d",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "live/grading/scores.json",
+      "original_sha256": "9c9edb7293751f6d8d23ac0eead4542169df463c1654323eca347d372f08b7d4",
+      "published_sha256": "c4127f858253ce24877ebd5bd35936062ed7cb7343f39f7ed36791d4c0de0e78",
+      "changes": [
+        "Redacted the absolute runtime interpreter path in recorded commands to python3; arguments and all other evidence are unchanged."
+      ]
+    },
+    {
+      "file": "market/market_validation.md",
+      "original_sha256": "ac3f1eec15622e2805b929657222edda2b6d037c56390e8b77d43b120ed4f42c",
+      "published_sha256": "b30176d28f6d4661833a0ad0fa0108ae40181ca7647c75170a5f7122f888744d",
+      "changes": [
+        "Reworded session-specific authorization language as public research status.",
+        "Removed private request-scope language; retained the absence of customer validation and commercial claims."
+      ]
+    }
+  ]
+}

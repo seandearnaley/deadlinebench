@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "status": "fixed_before_participant_execution",
+  "sha256": {
+    "answer_key.md": "ff482c255beb1ebb1b3eb83637adf66477c9f00a295f691b527b6eca5c321dc3",
+    "rubric.md": "2a736c33cb8da303bfb35818a26d8a3421ba7a7504c82e9cb6a8daab3f5d50bf"
+  },
+  "scoring": {
+    "mandatory": [
+      30,
+      25,
+      15
+    ],
+    "optional": [
+      10,
+      10,
+      10
+    ],
+    "total": 100
+  },
+  "snapshot_seconds": [
+    90,
+    180,
+    300
+  ]
+}

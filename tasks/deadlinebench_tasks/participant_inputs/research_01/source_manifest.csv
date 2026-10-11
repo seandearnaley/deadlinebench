@@ -1,0 +1,10 @@
+source_id,file,description,synthetic
+S01,sources/S01_decision_charter.md,"Decision priorities, constraints, calculation assumptions",true
+S02,sources/S02_supplier_proposals.md,Quotes and marketing claims from both invented suppliers,true
+S03,sources/S03_handling_trial.csv,Observed handling counts and totals with row IDs,true
+S03,sources/S03_trial_method.md,Method and comparability limitations,true
+S04,sources/S04_answer_audit.csv,Independent answer audit counts with row IDs,true
+S04,sources/S04_audit_notes.md,"Audit definitions, limitations, production gate assessment",true
+S05,sources/S05_implementation_estimates.md,Central internal hours and contingencies,true
+S06,sources/S06_agent_interviews.md,Qualitative convenience sample,true
+S07,sources/S07_demand_and_policy_note.md,Forecast uncertainty and imminent policy change,true

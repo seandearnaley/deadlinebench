@@ -1,0 +1,15 @@
+SYNTHETIC DATA. No actual purchases or persons.
+
+Evaluation instant: 2026-06-15T00:00:00Z. May-arrival window: placed_at >= 2026-05-01T00:00:00Z and < 2026-06-01T00:00:00Z. All timestamps UTC, all money USD, tax excluded.
+
+orders.csv: one unique row per order_id, no duplicate orders. Fields placed_at, shipped_at, channel, subtotal_usd, discount_usd, product_cost_usd, shipping_cost_usd, status. A qualifying order arrived in May, has status shipped and nonblank shipped_at strictly before evaluation. Exclude cancelled/pending orders. The subtotal precedes discounts. Gross charged sales = sum(subtotal_usd - discount_usd) for qualifying orders. Product and shipping costs are incurred once per qualifying shipped order; they are not recovered after a refund. An order's channel is the recorded attribution label, not proof the channel caused its purchase.
+
+refunds.csv: refund_id identifies an individual refund event, order_id links to orders, issued_at is issue time, refund_usd is that event's amount, reason is a simple code. Overlapping exports produce exact duplicate rows with the same refund_id. Remove duplicate refund_id rows once. Multiple distinct refund IDs may belong to one order, including partial refunds. Include a refund only if its order qualifies and its issued_at is strictly before evaluation. Sum qualifying event amounts. Refunded-order rate = distinct qualifying orders with at least one qualifying refund / qualifying shipped orders in the group * 100. Event count is not refunded-order count. Every refund links to a known order.
+
+marketing_spend.csv: one row per period/channel, May costs already incurred. Sum ALL May spend for the applicable channel; do not restrict spend to the subset of qualifying orders or join spend directly onto order rows. The final May period is ten days. Spend is not prorated.
+
+Net sales = gross charged sales - qualifying refund amounts.
+Product-plus-shipping costs = sum(product_cost_usd + shipping_cost_usd) for qualifying orders.
+Contribution = net sales - product-plus-shipping costs - May marketing spend. It is not accounting profit: no fixed overhead, payment fees, tax or lifetime/repeat-customer value is supplied.
+Weekly groups use order placed_at, not ship or refund dates. When weekly net sales are requested, assign all qualifying refunds back to their order's placement week; do not allocate May marketing spend to a weekly order cohort.
+Later-created cohorts have had less time to accumulate refunds by the common evaluation date. No customer IDs, randomized holdout, individual exposure, or future refund forecast is available. Channel mixes may differ. All decimal currency strings are exact to cents.

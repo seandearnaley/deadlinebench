@@ -1,0 +1,8 @@
+data_01 usable-core flag, frozen 2026-10-11 05:07 UTC before participant trials.
+This flag supplements the unchanged 100-point partial-credit rubric. It changes no score weights and adds no optional-item requirement.
+TRUE iff all of the following hold in saved artifacts at the cutoff:
+M1: All six overall values are correct (counts exact; hours/percent within 0.02) and April-arrival denominator, elapsed priority SLA including overdue unanswered tickets, responded-only median definitions are correct.
+M2: All three queues are correctly compared on tickets, breached, breach rate and unanswered, plus exactly two feasible whole shifts are justified by at least one true risk finding.
+M3: All five requested audit counts are correct, cutoff-before-dedup-before-test/cohort filtering is correct, and there is at least one specific as-of/unequal-age limitation plus a clear caution that observational data cannot establish staffing or incident causality.
+No optional item is needed. Correct statements may be distributed across saved artifacts. An unresolved conflicting material claim fails the affected criterion.
+For reproducibility, record each of these three booleans and the aggregate AND, not merely the aggregate flag.

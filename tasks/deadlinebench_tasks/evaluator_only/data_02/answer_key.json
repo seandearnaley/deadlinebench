@@ -1,0 +1,98 @@
+{
+  "overall": {
+    "shipped_orders": 358,
+    "gross_sales_usd": 30017.05,
+    "refunds_usd": 1878.82,
+    "net_sales_usd": 28138.23,
+    "product_shipping_cost_usd": 17780.43,
+    "marketing_spend_usd": 12169.0,
+    "contribution_usd": -1811.2,
+    "refund_rate_pct": 13.41,
+    "contribution_per_marketing_dollar": -0.1488
+  },
+  "by_channel": {
+    "Search": {
+      "shipped_orders": 120,
+      "gross_sales_usd": 10520.31,
+      "refunds_usd": 689.84,
+      "net_sales_usd": 9830.47,
+      "product_shipping_cost_usd": 6141.22,
+      "marketing_spend_usd": 4194.0,
+      "contribution_usd": -504.75,
+      "refund_rate_pct": 15.0,
+      "contribution_per_marketing_dollar": -0.1204
+    },
+    "Social": {
+      "shipped_orders": 118,
+      "gross_sales_usd": 10021.15,
+      "refunds_usd": 768.91,
+      "net_sales_usd": 9252.24,
+      "product_shipping_cost_usd": 5941.12,
+      "marketing_spend_usd": 4834.0,
+      "contribution_usd": -1522.88,
+      "refund_rate_pct": 16.1,
+      "contribution_per_marketing_dollar": -0.315
+    },
+    "Email": {
+      "shipped_orders": 76,
+      "gross_sales_usd": 5979.98,
+      "refunds_usd": 255.28,
+      "net_sales_usd": 5724.7,
+      "product_shipping_cost_usd": 3632.04,
+      "marketing_spend_usd": 1359.0,
+      "contribution_usd": 733.66,
+      "refund_rate_pct": 9.21,
+      "contribution_per_marketing_dollar": 0.5399
+    },
+    "Partner": {
+      "shipped_orders": 44,
+      "gross_sales_usd": 3495.61,
+      "refunds_usd": 164.79,
+      "net_sales_usd": 3330.82,
+      "product_shipping_cost_usd": 2066.05,
+      "marketing_spend_usd": 1782.0,
+      "contribution_usd": -517.23,
+      "refund_rate_pct": 9.09,
+      "contribution_per_marketing_dollar": -0.2903
+    }
+  },
+  "audit": {
+    "raw_orders": 440,
+    "non_may_orders": 50,
+    "may_cancelled": 32,
+    "may_not_shipped_by_cutoff": 0,
+    "raw_refund_rows": 85,
+    "duplicate_refund_rows": 9,
+    "qualifying_refund_events": 59,
+    "refunded_order_count": 48
+  },
+  "by_week": {
+    "May 1-7": {
+      "shipped_orders": 88,
+      "net_sales_usd": 6396.2,
+      "refunded_order_count": 15
+    },
+    "May 8-14": {
+      "shipped_orders": 82,
+      "net_sales_usd": 6595.12,
+      "refunded_order_count": 13
+    },
+    "May 15-21": {
+      "shipped_orders": 82,
+      "net_sales_usd": 6011.98,
+      "refunded_order_count": 13
+    },
+    "May 22-31": {
+      "shipped_orders": 106,
+      "net_sales_usd": 9134.93,
+      "refunded_order_count": 7
+    }
+  },
+  "stress_by_channel": {
+    "Search": -1030.77,
+    "Social": -2023.94,
+    "Email": 434.66,
+    "Partner": -692.01
+  },
+  "stress_total_usd": -3312.05
+}

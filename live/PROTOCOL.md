@@ -1,0 +1,19 @@
+# Native-agent screening pilot, October 11, 2026
+
+Purpose: a small real-agent instrumentation/feasibility test, not a model leaderboard or a powered causal study.
+
+One synthetic support-analysis task (data_01), using a frozen 670-row input export. Three fresh gpt-6.1-sol agents, xhigh reasoning, with the same task and tools. Conditions: ordinary deadline; explicit available remaining-time file; that clock plus guidance to persist mandatory scope before optional additions. All participants see mandatory/optional requirements and an instruction to save partial work early. Baseline can still query system time: this tests clock affordance/prompting, not removal of time access.
+
+Primary wave: actual final deadline of 300 seconds per participant, with independent observations at90/180/300 seconds. The first two observations are checkpoints, NOT separate assignments of shorter deadlines. Time starts immediately before spawning the participant; admission overhead is included. Start times are staggered. No new paid API calls were made; these are native-agent runs, with unknown underlying service resource cost.
+
+A separately running Python observer uses a monotonic clock. It copies delivered output files at each cutoff and records actual observation time, hashes and whether size/mtime were stable during copying. Poll interval is0.1second plus copy work; observation error is reported. This observer does not kill the model. Only captured artifacts count; later material is excluded. Participants are told to stop writing at deadline and to use atomic replacement.
+
+One scope-condition admission failed because other research workers occupied the concurrency slots. That empty attempt (scope/) is an infrastructure/admission failure, excluded from policy comparisons, preserved and explicitly logged. Scope was then started as a fresh independent run(scope2/) with a new full budget. No participant was admitted to the failed attempt.
+
+The input/rubric files were authored before outputs were examined. A separate usable-core flag was clarified after the first two launches but before their output inspection, without changing task inputs or weighted rubric. This is an exploratory pilot, not a preregistered confirmatory study. Rubric hashes are saved. Weighted partial credit and mandatory-core validity must be reported separately.
+
+Limitations: one task and one run per condition; no randomized order; shared machine and service contention; no independent security sandbox between native agents (they are instructed not to inspect answer keys/other trials); no full provider latency telemetry; no real customer/production data; baseline already receives scope labels. These results cannot establish a model ranking, product demand, or the benefit of training. Checkpoint scores are not independent observations.
+
+A second exploratory wave assigns an actual60-second deadline to two new participants on the same task: ordinary instructions and clock-plus-scope guidance. It is not a repeated seeded sample. This follow-up was chosen after the first-wave completion notifications suggested the300-second budget was generous, but before inspecting or grading their output content. Only the deadline sentence is changed in copied taskinputs. The60-second final snapshot is separate from the firstwave's checkpoint observations. Trials share resources with other work; no causal/model-ranking conclusion is justified.
+
+One additional60-second paired repetition was launched, reversing the baseline/guidance launch order, after first-wave files were frozen and the grader noted a missing report in one short output. This is an exploratory follow-up, not preregistered independent confirmation. No inputs, condition instructions, score weights or core flag were changed. Two repetitions per short condition remain far too few for a policy-effect estimate. No further runs are part of this bounded pilot.

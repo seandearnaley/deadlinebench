@@ -1,0 +1,14 @@
+[
+  {
+    "task": "data_01",
+    "positive_control_numeric_points": 61,
+    "numeric_max": 61,
+    "independent_sql_crosscheck": "passed core aggregates"
+  },
+  {
+    "task": "data_02",
+    "positive_control_numeric_points": 64,
+    "numeric_max": 64,
+    "independent_sql_crosscheck": "passed core aggregates"
+  }
+]
